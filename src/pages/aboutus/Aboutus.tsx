@@ -1,6 +1,8 @@
 import React from 'react';
 import {Grid, Typography, Box, Button} from '@material-ui/core';
 import './Aboutus.css';
+import { Link } from 'react-router-dom';
+
 
 function Aboutus() {
     return (
@@ -13,7 +15,10 @@ function Aboutus() {
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
-                        </Box>
+                        <Link to="/aboutus" className="text-decorator-none"> </Link>                    
+                    </Box>       
+
+                    
                         <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
                     </Box>
                 </Grid>
