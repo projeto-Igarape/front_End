@@ -16,8 +16,6 @@ function Contacts() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         <Link to="/contacts" className="text-decorator-none"></Link>
-                                
-                            
                         </Box>
                         <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
                     </Box>
