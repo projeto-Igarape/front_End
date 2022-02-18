@@ -11,23 +11,24 @@ function App() {
   return (
     <Router>
       <Navbar />
-        <Switch>
-          <div>
-            <Route path='/aboutus'>
-              <Aboutus/>
-            </Route>
+      <Switch>
+        <div>
+          <Route path='/aboutus'>
+            <Aboutus />
+          </Route>
 
-            <Route path='/contacts'>
-              <Contacts/>
-            </Route>
+          <Route path='/contacts'>
+            <Contacts />
+          </Route>
 
-            <Route path='/home'>
-              <Home/>
-            </Route>
+          <Route path='/home'>
+            <Home />
+          </Route>
 
-          </div>
+        </div>
 
-        </Switch>
+      </Switch>
+      <Home ></Home>
       <Footer />
     </Router>
   );
