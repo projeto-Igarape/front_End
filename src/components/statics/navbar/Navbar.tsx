@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 function Navbar(){
     return (
         <>
-        <AppBar position="static">
+        
+        <AppBar position="relative">
                 <Toolbar variant="dense">
-                    <Box style={{ cursor: "pointer" }} >
+                    <Box style={{ cursor: "pointer" }}>
                         <Typography variant="h5" color="inherit">
                             Projeto Igarapé
                         </Typography>
                     </Box>
-
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
@@ -21,7 +21,7 @@ function Navbar(){
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                            <Link to='/aboutus'>AboutUs</Link>
+                            <Link to='/aboutus'>About Us</Link>
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
