@@ -16,7 +16,7 @@ function Home(){
 
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
-                        <Link to="/home" className="text-decorator-none">
+                        <Link to="/home" style={{ textDecoration:'none'}} className="text-decorator-none">
                                 <Button className="button-style" type="submit" variant="contained" color="primary">
                                     Logar
                                 </Button>

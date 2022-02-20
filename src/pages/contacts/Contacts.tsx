@@ -15,7 +15,7 @@ function Contacts() {
                         <TextField id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
                         <TextField id="assunto" label="assunto" variant="outlined" name="assunto" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign="center">
-                            <Link to="/home" className="text-decorator-none">
+                            <Link to="/home" style={{ textDecoration:'none'}} className="text-decorator-none">
                                 <Button className="button-style" type="submit" variant="contained" color="primary">
                                     Enviar
                                 </Button>

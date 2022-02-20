@@ -6,8 +6,8 @@ function Navbar(){
     return (
         <>  
         <AppBar position="relative" style={{ backgroundColor: "#2191D1" }}>
-            <Grid item xs={12} >
-                    <img src="https://imgur.com/G9gxl19.png" alt="NavBar" width="1349px" height="67px"/>
+            <Grid item xs={6} >
+                    <img src="https://imgur.com/Jv1AahJ.png" alt="NavBar" width="1349px" height="47px"/>
             </Grid>
                 <Toolbar variant="dense">
                     <Box style={{ cursor: "pointer" }}>
@@ -18,17 +18,17 @@ function Navbar(){
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                <Link to='/home'>Home</Link>
+                                <Link to='/home' style={{ textDecoration:'none'}} >Home</Link>
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                            <Link to='/aboutus'>About Us</Link>
+                            <Link to='/aboutus' style={{ textDecoration:'none'}} >About Us</Link>
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                            <Link to='/contacts'>Contacts</Link>
+                            <Link to='/contacts'style={{ textDecoration:'none'}} >Contacts</Link>
                             </Typography>
                         </Box>
                     

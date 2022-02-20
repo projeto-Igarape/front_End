@@ -22,7 +22,7 @@ function Footer(){
                                 <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
                             </Box>
                             <Box>
-                                <a target="_blank" href="https://brazil.generation.org/">
+                                <a target="_blank" style={{ textDecoration:'none'}} href="https://brazil.generation.org/">
                                     <Typography variant="subtitle2" gutterBottom style={{ color: "white" }} align="center">brasil.generation.org</Typography>
                                 </a>
                             </Box>
