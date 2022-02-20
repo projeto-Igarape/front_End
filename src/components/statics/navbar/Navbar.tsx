@@ -7,7 +7,7 @@ function Navbar(){
         <>  
         <AppBar position="relative" style={{ backgroundColor: "#2191D1" }}>
             <Grid item xs={12} >
-                    <img src="https://imgur.com/G9gxl19.png" alt="" width="1349px" height="67px"/>
+                    <img src="https://imgur.com/G9gxl19.png" alt="NavBar" width="1349px" height="67px"/>
             </Grid>
                 <Toolbar variant="dense">
                     <Box style={{ cursor: "pointer" }}>
