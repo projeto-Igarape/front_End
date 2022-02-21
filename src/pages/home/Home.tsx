@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Home(){
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#3F51B5" }}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#2191D1" }}>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a).</Typography>
@@ -17,13 +17,13 @@ function Home(){
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         <Link to="/home" style={{ textDecoration:'none'}} className="text-decorator-none">
-                                <Button className="button-style" type="submit" variant="contained" color="primary">
+                                <Button className="button-style" type="submit" variant="contained" style={{backgroundColor: "#2191D1"}}>
                                     Logar
                                 </Button>
                             </Link>
 
                         </Box>
-                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
+                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#2191D1", color: "white" }}>Ver Postagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
