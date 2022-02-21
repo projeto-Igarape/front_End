@@ -12,7 +12,7 @@ function Footer(){
                                 <Typography variant="h5" align="center" gutterBottom style={{ color: "white" }}>Siga-nos nas redes sociais </Typography>
                             </Box>
                             <Box display="flex" alignItems="center" justifyContent="center">
-                                <a href="https://github.com/ProjetoIgarape" target="_blank">
+                                <a href="https://github.com/ProjetoIgarape">
                                     <GitHubIcon style={{ fontSize: 30, color: "white" }} />
                                 </a>
                             </Box>
@@ -22,7 +22,7 @@ function Footer(){
                                 <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
                             </Box>
                             <Box>
-                                <a target="_blank" style={{ textDecoration:'none'}} href="https://brazil.generation.org/">
+                                <a style={{ textDecoration:'none'}} href="https://brazil.generation.org/">
                                     <Typography variant="subtitle2" gutterBottom style={{ color: "white" }} align="center">brasil.generation.org</Typography>
                                 </a>
                             </Box>
