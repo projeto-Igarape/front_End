@@ -2,6 +2,7 @@ import React, { ChangeEvent, useState, useEffect } from 'react';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
+
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
 import "./Login.css";
@@ -47,11 +48,11 @@ function Login() {
                         <TextField  value={userLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='e-mail' variant='outlined' name='email' margin='normal' fullWidth/>
                         <TextField  value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth/>
                         <Box marginTop={2} textAlign='center'>
-                        <Link to='/home' className='text-decorator-none'>
+                        
                             <Button type='submit' variant='outlined' color='primary' style={{ borderColor: "white", backgroundColor: "#2191D1", color: "white", textDecoration:'none' }} >
                                 Logar
                             </Button>
-                        </Link>
+                        
                         </Box>
                     </form>
                 </Box>
