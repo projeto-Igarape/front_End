@@ -16,11 +16,12 @@ function Home(){
 
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
-                        <Link to="/home" style={{ textDecoration:'none'}} className="text-decorator-none">
+                            <Box style={{ textDecoration:'none'}} className="text-decorator-none">
                                 <Button className="button-style" type="submit" variant="contained" style={{backgroundColor: "#2191D1"}}>
-                                    Logar
+                                <Link to="/login">Logar</Link>
                                 </Button>
-                            </Link>
+                                </Box>
+
 
                         </Box>
                         <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#2191D1", color: "white" }}>Ver Postagens</Button>
