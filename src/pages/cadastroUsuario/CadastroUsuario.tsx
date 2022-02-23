@@ -14,11 +14,11 @@ function CadastroUsuario() {
     const [confirmarSenha, setConfirmarSenha] = useState<String>("");
 
     const [user, setUser] = useState<User>({
-        id: 0, nome: "",  usuario: "", senha: ""
+        id: 0, nome: "",  email: "", senha: ""
     })
 
     const [userResult, setUserResult] = useState<User>({
-        id: 0, nome: "", usuario: "", senha: ""
+        id: 0, nome: "", email: "", senha: ""
     })
 
     useEffect(() => {
@@ -41,7 +41,7 @@ function CadastroUsuario() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         if (confirmarSenha ===  user.senha && user.senha.length >= 8) {
-            cadastroUsuario(`usuarios/cadastrar`, user, setUserResult)
+            cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
             alert("Usuário cadastrado com sucesso!");
         } else {
             alert("Verifique se os campos foram preenchidos corretamente.");
@@ -66,12 +66,12 @@ function CadastroUsuario() {
                             fullWidth
                         />
                         <TextField
-                            value={user.usuario}
+                            value={user.email}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id="usuario"
+                            id="email"
                             label="E-mail"
                             variant="outlined"
-                            name="usuario"
+                            name="email"
                             margin="normal"
                             fullWidth
                         />
@@ -98,12 +98,12 @@ function CadastroUsuario() {
                             fullWidth
                         />
                         <Box marginTop={2} textAlign='center'>
-                        <Link to='/login' className='text-decorator-none'>
+                        
                                 <Button type='submit' variant='contained' color='primary'>
                                     Cadastrar
                                    
                                 </Button>
-                                </Link>
+                                
                             <Link to='/login' className='text-decorator-none'>
                             <Button variant='contained' color='secondary' className='btnCancelar'>
                                 Cancelar

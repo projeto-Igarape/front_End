@@ -1,7 +1,7 @@
 interface UserLogin {
-    id: number,
-    usuario: string,
-    senha: string,
+    id: number;
+    email: string;
+    senha: string;
     token?: string | null
 }
 
