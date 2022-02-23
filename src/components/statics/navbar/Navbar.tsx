@@ -31,13 +31,14 @@ function Navbar(){
                             <Link to='/contacts'style={{ textDecoration:'none'}} >Contacts</Link>
                             </Typography>
                         </Box>
-                        <Link to='/login' className='text-decorator-none'>
+                       
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                            <Link to='/contacts'style={{ textDecoration:'none'}} >LogOut</Link>
+                            LogOut
                             </Typography>
                         </Box>
-                        </Link>
+                       
+                        
                     </Box>
 
                 </Toolbar>

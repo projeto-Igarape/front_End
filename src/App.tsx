@@ -42,6 +42,8 @@ function App() {
             <Home />
           </Route>
 
+        
+
         </div>
 
       </Switch>

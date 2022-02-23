@@ -15,12 +15,7 @@ function Home(){
                     </Box>
 
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <Box style={{ textDecoration:'none'}} className="text-decorator-none">
-                            <Button className="button-style" type="submit" variant="contained" style={{backgroundColor: "#2191D1"}}>
-                               <Link to="/login">Logar</Link>
-                                </Button>
-                                </Box>      
+                        <Box marginRight={1}>   
                              </Box>
                         <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#2191D1", color: "white" }}>Ver Postagens</Button>
                     </Box>
