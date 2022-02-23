@@ -2,10 +2,8 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
-
 import './CadastroUsuario.css';
 
 function CadastroUsuario() {
@@ -101,7 +99,6 @@ function CadastroUsuario() {
                         
                                 <Button type='submit' variant='contained' color='primary'>
                                     Cadastrar
-                                   
                                 </Button>
                                 
                             <Link to='/login' className='text-decorator-none'>
