@@ -2,10 +2,8 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
-
 import './CadastroUsuario.css';
 
 function CadastroUsuario() {
@@ -41,7 +39,7 @@ function CadastroUsuario() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         if (confirmarSenha ===  user.senha && user.senha.length >= 8) {
-            cadastroUsuario(`usuarios/cadastrar`, user, setUserResult)
+            cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
             alert("Usuário cadastrado com sucesso!");
         } else {
             alert("Verifique se os campos foram preenchidos corretamente.");
@@ -101,7 +99,6 @@ function CadastroUsuario() {
                         <Link to='/login' className='text-decorator-none'>
                                 <Button type='submit' variant='contained' color='primary'>
                                     Cadastrar
-                                   
                                 </Button>
                                 </Link>
                             <Link to='/login' className='text-decorator-none'>
