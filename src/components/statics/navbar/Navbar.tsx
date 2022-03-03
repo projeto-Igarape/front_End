@@ -1,39 +1,41 @@
 import React from 'react';
-import { AppBar, Grid, Toolbar, Typography, Box} from '@material-ui/core';
+import { AppBar, Grid, Toolbar, Typography, Box } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
+import Logo from '../../../assets/img/Logo.png'
 
-function Navbar(){
+function Navbar() {
     return (
-        <>  
-        <AppBar position="relative" style={{ backgroundColor: "#2191D1" }}>
-            <Grid item xs={6} >
-                    <img src="https://imgur.com/Jv1AahJ.png" alt="NavBar" width="1365px" height="47px"/>
-            </Grid>
-                <Toolbar variant="dense">
-                    <Box style={{ cursor: "pointer" }}>
-                        <Typography variant="h5" color="inherit" >
-                            Projeto Igarapé
-                        </Typography>
-                    </Box>
-                    <Box display="flex" justifyContent="start">
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                <Link to='/home' style={{ textDecoration:'none'}} >Home</Link>
-                            </Typography>
+        <>
+            <AppBar position="relative" className='nav'>
+                <Toolbar>
+                    <Grid container>
+                    <Grid xs={6} md={8}>
+                        <Box paddingRight={70} >                      
+                                <img src={Logo} alt="Logo Igarapé" width='100px' />                      
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                            <Link to='/aboutus' style={{ textDecoration:'none'}} >About Us</Link>
-                            </Typography>
+                    </Grid>
+                    <Grid xs={6} md={4}>
+                        <Box display="flex" justifyContent="start" paddingTop={9} paddingLeft={6}>
+                            <Box mx={1} className='boxNav'>
+                                <Typography variant="h6">
+                                    <Link to='/home' className='text-decorator-none'>Home</Link>
+                                </Typography>
+                            </Box>
+                            <Box mx={1} className='boxNav'>
+                                <Typography variant="h6">
+                                    <Link to='/aboutus' className='text-decorator-none'>About Us</Link>
+                                </Typography>
+                            </Box>
+                            <Box mx={1} className='boxNav'>
+                                <Typography variant="h6">
+                                    <Link to='/contacts' className='text-decorator-none'>Contacts</Link>
+                                </Typography>
+                            </Box>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                            <Link to='/contacts'style={{ textDecoration:'none'}} >Contacts</Link>
-                            </Typography>
-                        </Box>
-                    
-                    </Box>
-
+                    </Grid>
+                  
+                </Grid>
                 </Toolbar>
             </AppBar>
         </>
