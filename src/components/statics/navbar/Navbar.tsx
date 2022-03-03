@@ -33,9 +33,7 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Box>
-                    </Grid>
-                  
-                </Grid>
+
                 </Toolbar>
             </AppBar>
         </>
