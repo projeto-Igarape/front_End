@@ -38,26 +38,26 @@ function Navbar() {
         navbarComponent = <header id="header">
             <a id='logo' href="">Logo</a>
             <nav id="nav">
-                <button id="btn-mobile">Lendas Amazônicas</button>
+                <button id="btn-mobile">Projeto Igarapé</button>
                 <ul id="menu">
                     <Link to='/home'>
                         <Box mx={1}>
                             <li><a href="/">Home</a></li>
                         </Box>
                     </Link>
-                    <Link to='/posts'>
+                    <Link to='/aboutus'>
                         <Box mx={1}>
-                            <li><a href="/">Postagens</a></li>
+                            <li><a href="/">Sobre nós</a></li>
                         </Box>
                     </Link>
-                    <Link to='/temas'>
+                    <Link to='/'>
                         <Box mx={1} >
-                            <li><a href="/">Temas</a></li>
+                            <li><a href="/">Cisterna</a></li>
                         </Box>
                     </Link>
-                    <Link to='/formularioTemas'>
+                    <Link to='/contacts'>
                         <Box mx={1} >
-                            <li><a href="/">Cadastrar Tema</a></li>
+                            <li><a href="/">Contato</a></li>
                         </Box>
                     </Link>
                     <Link to='/login'>
