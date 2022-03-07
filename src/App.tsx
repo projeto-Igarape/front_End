@@ -10,6 +10,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
+import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 
 
 function App() {
@@ -34,7 +35,13 @@ function App() {
 
           <Route path='/cadastroUsuario'>
             <CadastroUsuario />
-          
+          </Route>
+
+          <Route exact path='/formularioCategoria'>
+            <ListaCategoria />
+          </Route>
+          <Route exact path='/formularioCategoria/:id'>
+            <ListaCategoria />
           </Route>
 
         </div>
