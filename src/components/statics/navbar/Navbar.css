@@ -2,6 +2,7 @@
 .cursor{
     cursor: pointer;
     color: white;
+}
 
 body, ul {
     margin: 0;
