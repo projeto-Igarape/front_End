@@ -19,6 +19,7 @@ function Navbar() {
 
     return (
         <>
+           <header id="header">
             <a id='logo' href="">Logo</a>
             <nav id="nav">
                 <button id="btn-mobile">Projeto Igarapé</button>
@@ -30,10 +31,15 @@ function Navbar() {
                     </Link>
                     <Link to='/aboutus'>
                         <Box mx={1}>
-                            <li><a href="/">Sobre nós</a></li>
+                            <li><a href="/">Sobre Nós</a></li>
                         </Box>
                     </Link>
                     <Link to='/'>
+                        <Box mx={1} >
+                            <li><a href="/">Produtos</a></li>
+                        </Box>
+                    </Link>
+                    <Link to='/temas'>
                         <Box mx={1} >
                             <li><a href="/">Cisterna</a></li>
                         </Box>
@@ -43,6 +49,11 @@ function Navbar() {
                             <li><a href="/">Contato</a></li>
                         </Box>
                     </Link>
+                    <Link to='/cadastroCategoria'>
+                        <Box mx={1} >
+                            <li><a href="/">Cadastrar Categoria</a></li>
+                        </Box>
+                    </Link>
                     <Link to='/login'>
                         <Box mx={1}  onClick={goLogout}>
                             <li><a href="/">Logout</a></li>
@@ -50,6 +61,7 @@ function Navbar() {
                     </Link>
                 </ul>
             </nav>
+        </header>
         </>
     )
 }

@@ -9,6 +9,7 @@ import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
 import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 import CadastroCategoria from './components/categorias/cadastroCategoria/CadastroCategoria';
+import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
 
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
 
           <Route exact path='/cadastroCategoria'>
             <CadastroCategoria />
+          </Route>
+
+          <Route path='/deletarCategoria/:id'>
+            <DeletarCategoria />
           </Route>
 
           <Route exact path='/cadastroCategoria/:id'>
