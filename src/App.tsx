@@ -37,10 +37,11 @@ function App() {
             <CadastroCategoria />
           </Route>
 
-          <Route exact path='/formularioCategoria'>
-            <ListaCategoria />
+          <Route exact path='/cadastroCategoria/:id'>
+            <CadastroCategoria />
           </Route>
-          <Route exact path='/formularioCategoria/:id'>
+
+          <Route exact path='/categorias'>
             <ListaCategoria />
           </Route>
 

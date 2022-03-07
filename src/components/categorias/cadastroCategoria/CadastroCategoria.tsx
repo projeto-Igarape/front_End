@@ -4,8 +4,6 @@ import { Container, Typography, TextField, Button } from '@material-ui/core';
 
 import Categoria from '../../../models/Categoria';
 
-import { toast } from 'react-toastify';
-
 import './CadastroCategoria.css';
 import { buscaID, post, put } from '../../../services/Service';
 import useLocalStorage from 'react-use-localstorage';
@@ -23,16 +21,7 @@ function CadastroCategoria() {
 
     useEffect(() => {
         if (token == '') {
-            toast.error('É necessário fazer o login!', {
-                position: 'top-right',
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                theme: 'colored',
-                progress: undefined
-            });
+            alert("Você precisa estar logado!")
             history.push('/login')
         }
     }, [history, token])
@@ -60,39 +49,21 @@ function CadastroCategoria() {
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
-
+        console.log('categoria' + JSON.stringify(categoria))
         if (id !== undefined) {
             put(`/categorias`, categoria, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
             })
-            toast.success('Categoria atualizada!', {
-                position: 'top-right',
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                theme: 'colored',
-                progress: undefined
-            });
+            alert('Categoria atualizada!')
         } else {
             post(`/categorias`, categoria, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
             })
-            toast.success('Categoria cadastrada!', {
-                position: 'top-right',
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                theme: 'colored',
-                progress: undefined
-            });
+            alert('Categoria cadastrada!')
         }
         back()
     }
