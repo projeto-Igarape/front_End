@@ -3,39 +3,22 @@ import { Box, } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import './Navbar.css'
-import { useDispatch, useSelector } from 'react-redux';
-import { addToken } from '../../../store/tokens/actions';
-import { TokenState } from '../../../store/tokens/tokensReducer';
-import { toast } from 'react-toastify';
+import useLocalStorage from 'react-use-localstorage';
 
 
 function Navbar() {
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );
+    
+    const [token, setToken] = useLocalStorage('token');
     let history = useHistory();
-    const dispatch = useDispatch();
 
-    function goLogout() {
-        dispatch(addToken(''));
-        toast.info('Usuário(a) deslogado', {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: "colored",
-            progress: undefined,
-
-        });
+    function goLogout(){
+        setToken('')
+        alert('Usuário deslogado!')
         history.push('/login')
     }
 
-    var navbarComponent;
-
-    if (token != "") {
-        navbarComponent = <header id="header">
+    return (
+        <>
             <a id='logo' href="">Logo</a>
             <nav id="nav">
                 <button id="btn-mobile">Projeto Igarapé</button>
@@ -67,11 +50,6 @@ function Navbar() {
                     </Link>
                 </ul>
             </nav>
-        </header>
-    }
-    return (
-        <>
-            {navbarComponent}
         </>
     )
 }
