@@ -38,12 +38,17 @@ function Navbar() {
                                     <li><a href="/">Cadastrar Categoria</a></li>
                                 </Box>
                             </Link>
+                            <Link to='/cadastroProduto'>
+                                <Box mx={1} >
+                                    <li><a href="/">Cadastrar Produto</a></li>
+                                </Box>
+                            </Link>
                             <Link to='/listaProduto'>
                                 <Box mx={1} >
                                     <li><a href="/">Produtos</a></li>
                                 </Box>
                             </Link>
-                            <Link to='/temas'>
+                            <Link to='/listaProduto'>
                                 <Box mx={1} >
                                     <li><a href="/">Cisterna</a></li>
                                 </Box>
