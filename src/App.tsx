@@ -11,6 +11,7 @@ import ListaCategoria from './components/categorias/listaCategoria/ListaCategori
 import CadastroCategoria from './components/categorias/cadastroCategoria/CadastroCategoria';
 import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
 import CadastroProduto from './components/produtos/cadastroProduto/CadastroProduto';
+import ListaProduto from './components/produtos/listaProduto/ListaProduto';
 
 
 function App() {
@@ -53,6 +54,10 @@ function App() {
 
           <Route exact path='/categorias'>
             <ListaCategoria />
+          </Route>
+
+          <Route exact path='/listaProduto'>
+            <ListaProduto />
           </Route>
 
         </div>

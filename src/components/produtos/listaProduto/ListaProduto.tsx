@@ -8,12 +8,12 @@ import useLocalStorage from 'react-use-localstorage';
 import { useHistory } from 'react-router-dom'
 
 function ListaProduto() {
-  const [produto, setProduto] = useState<Produto[]>([])
+  const [produtos, setProdutos] = useState<Produto[]>([])
   const [token, setToken] = useLocalStorage('token');
   let history = useHistory();
 
   useEffect(() => {
-    if (token == "") {
+    if (token === "") {
       alert("Você precisa estar logado")
       history.push("/login")
 
@@ -21,7 +21,7 @@ function ListaProduto() {
   }, [token])
 
   async function getProduto() {
-    await busca("/produtos", setProduto, {
+    await busca("/produtos", setProdutos, {
       headers: {
         'Authorization': token
       }
@@ -32,12 +32,12 @@ function ListaProduto() {
 
     getProduto()
 
-  }, [produto.length])
+  }, [produtos.length])
 
   return (
     <>
       {
-        produto.map(produto => (
+        produtos.map(produto => (
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
@@ -67,7 +67,7 @@ function ListaProduto() {
                       </Button>
                     </Box>
                   </Link>
-                  <Link to={`/deletarPostagem/${produto.id}`} className="text-decorator-none">
+                  <Link to={`/deletarProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="secondary">
                         deletar
