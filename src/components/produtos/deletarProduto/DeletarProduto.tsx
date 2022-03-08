@@ -14,7 +14,7 @@ function DeletarProduto() {
     const [produto, setProduto] = useState<Produto>()
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             alert("Você precisa estar logado")
             history.push("/login")
     
