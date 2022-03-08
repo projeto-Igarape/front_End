@@ -13,11 +13,11 @@ import { busca, buscaID, post, put } from '../../../services/Service';
 function CadastroProduto() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
-    const [categorias, setCategorias] = useState<Categoria[]>([])
+    const [categorias, setCategorias] = useState<Categoria[]>([]) 
     const [token, setToken] = useLocalStorage('token');
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             alert("Você precisa estar logado")
             history.push("/login")
 
@@ -94,7 +94,7 @@ function CadastroProduto() {
     }
 
     function back() {
-        history.push('/produtos')
+        history.push('/listaProduto')
     }
 
     return (
