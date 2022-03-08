@@ -10,6 +10,7 @@ import Footer from './components/statics/footer/Footer';
 import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 import CadastroCategoria from './components/categorias/cadastroCategoria/CadastroCategoria';
 import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+import CadastroProduto from './components/produtos/cadastroProduto/CadastroProduto';
 
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
 
           <Route exact path='/cadastroCategoria/:id'>
             <CadastroCategoria />
+          </Route>
+
+          <Route exact path='/cadastroProduto'>
+            <CadastroProduto />
           </Route>
 
           <Route exact path='/categorias'>
