@@ -13,10 +13,13 @@ function Footer(){
 
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state)=> state.tokens
-    );
-    return (
-        <>
-                <footer className='footer'>
+        );
+
+        var footerComponent;
+    
+    
+        if (token != "") {
+            footerComponent = <footer className='footer'>
                 
                 
                                 <Box display="flex" alignItems="left" justifyContent="left">
@@ -78,8 +81,12 @@ function Footer(){
                         </Box>
                     
                 </footer>
-        </>
-    )
-}
-
-export default Footer; 
+        }
+        return (
+            <>
+                {footerComponent}
+            </>
+        )
+    }
+    
+export default Footer;
