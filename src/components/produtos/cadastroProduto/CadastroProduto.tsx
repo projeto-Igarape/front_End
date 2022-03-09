@@ -133,7 +133,7 @@ function CadastroProduto() {
 
     return (
         <Container className="container2" maxWidth="sm">
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className='card' >
                 <Typography className="space" variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um produto</Typography>
                 <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
                 <TextField value={produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço" name="preco" variant="outlined" margin="normal" fullWidth />
