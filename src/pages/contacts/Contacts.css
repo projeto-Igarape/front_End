@@ -1,0 +1,29 @@
+.card {
+    padding: 50px!important;
+    margin-bottom: 120px!important; 
+    width: 50vw!important;
+    height: 65vh!important;
+}
+
+.imagemc {
+    padding: 50px!important;
+    margin-bottom: 9px!important;
+    margin-left: -450px!important;
+}
+
+/* .imagemc{
+    background-repeat: no-repeat ;
+    width: 100vh ;
+    min-height: 100vh ;
+    background-size: cover ;
+    background-position: center ;
+} */
+
+.textoscontact{
+    font-weight: bold !important;
+}
+
+.btnEnviar{
+    margin-right: 20px !important;
+    background-color: #2191D1!important;
+}
