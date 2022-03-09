@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom';
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import Categoria from '../../../models/Categoria';
 import Produto from '../../../models/Produto';
@@ -15,12 +15,13 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 function CadastroProduto() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
-    const [categorias, setCategorias] = useState<Categoria[]>([]) 
+    const [categorias, setCategorias] = useState<Categoria[]>([])
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
     );
 
     useEffect(() => {
+        console.log(token)
         if (token === "") {
             toast.error('Você precisa estar logado', {
                 position: "top-right",
@@ -32,7 +33,7 @@ function CadastroProduto() {
                 theme: 'colored',
                 progress: undefined,
             });
-               history.push("/login")
+            history.push("/login")
 
         }
     }, [token])
@@ -103,7 +104,7 @@ function CadastroProduto() {
                 theme: 'colored',
                 progress: undefined,
             });
-                       
+
         } else {
             post(`/produtos`, produto, setProduto, {
                 headers: {
@@ -120,7 +121,7 @@ function CadastroProduto() {
                 theme: 'colored',
                 progress: undefined,
             });
-           
+
         }
         back()
 
@@ -138,12 +139,12 @@ function CadastroProduto() {
                 <TextField value={produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço" name="preco" variant="outlined" margin="normal" fullWidth />
                 <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth />
 
-                <FormControl >
+                <FormControl>
                     <InputLabel id="demo-simple-select-helper-label">Categoria</InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
-                        onChange={(e) => buscaID(`/produtos/${e.target.value}`, setCategoria, {
+                        onChange={(e) => buscaID(`/categorias/${e.target.value}`, setCategoria, {
                             headers: {
                                 'Authorization': token
                             }

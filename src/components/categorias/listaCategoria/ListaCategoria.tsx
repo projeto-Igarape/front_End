@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaCategoria.css';
@@ -12,10 +12,10 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function ListaCategoria() {
   const [categorias, setCategorias] = useState<Categoria[]>([])
+  let history = useHistory();
   const token = useSelector<TokenState, TokenState['tokens']>(
     (state) => state.tokens
-);
-  let history = useHistory();
+  );
 
   useEffect(() => {
     if (token == '') {
@@ -28,7 +28,7 @@ function ListaCategoria() {
         draggable: false,
         theme: 'colored',
         progress: undefined,
-    });
+      });
       history.push("/login")
     }
   }, [token])

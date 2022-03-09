@@ -14,69 +14,70 @@ import ListaProduto from './components/produtos/listaProduto/ListaProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import {ToastContainer} from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <Provider store={store}>
       <ToastContainer />
-    <Router>
-      <Navbar />
-      <Switch>
-        <div style={{ minHeight: "100vh" }}>
-          <Route exact path='/'>
-            <Login />
-          </Route>
+      <Router>
+        <Navbar />
+        <Switch>
+          <div style={{ minHeight: "100vh" }}>
 
-          <Route exact path='/login'>
-            <Login />
-          </Route>
+            <Route exact path='/'>
+              <Login />
+            </Route>
 
-          <Route exact path='/home'>
-            <Home />
-          </Route>
+            <Route exact path='/login'>
+              <Login />
+            </Route>
 
-          <Route exact path='/cadastroUsuario'>
-            <CadastroUsuario />
-          </Route>
+            <Route exact path='/home'>
+              <Home />
+            </Route>
 
-          <Route exact path='/cadastroCategoria'>
-            <CadastroCategoria />
-          </Route>
+            <Route exact path='/cadastroUsuario'>
+              <CadastroUsuario />
+            </Route>
 
-          <Route path='/deletarCategoria/:id'>
-            <DeletarCategoria />
-          </Route>
+            <Route exact path='/cadastroCategoria'>
+              <CadastroCategoria />
+            </Route>
 
-          <Route exact path='/cadastroCategoria/:id'>
-            <CadastroCategoria />
-          </Route>
+            <Route path='/deletarCategoria/:id'>
+              <DeletarCategoria />
+            </Route>
 
-          <Route exact path='/cadastroProduto'>
-            <CadastroProduto />
-          </Route>
+            <Route exact path='/cadastroCategoria/:id'>
+              <CadastroCategoria />
+            </Route>
 
-          <Route exact path='/cadastroProduto/:id'>
-            <CadastroProduto />
-          </Route>
+            <Route exact path='/cadastroProduto'>
+              <CadastroProduto />
+            </Route>
 
-          <Route exact path='/categorias'>
-            <ListaCategoria />
-          </Route>
+            <Route exact path='/cadastroProduto/:id'>
+              <CadastroProduto />
+            </Route>
 
-          <Route exact path='/listaProduto'>
-            <ListaProduto />
-          </Route>
+            <Route exact path='/categorias'>
+              <ListaCategoria />
+            </Route>
 
-          <Route path='/deletarProduto/:id'>
-            <DeletarProduto />
-          </Route>
+            <Route exact path='/listaProduto'>
+              <ListaProduto />
+            </Route>
 
-        </div>
-      </Switch>
-      <Footer />
-    </Router>
+            <Route exact path='/deletarProduto/:id'>
+              <DeletarProduto />
+            </Route>
+
+          </div>
+        </Switch>
+        <Footer />
+      </Router>
     </Provider>
   );
 }
