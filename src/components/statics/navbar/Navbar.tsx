@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Toolbar, AppBar, Icon } from '@material-ui/core';
+import { Box, Toolbar } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import './Navbar.css'
@@ -12,7 +12,6 @@ import { addToken } from '../../../store/tokens/actions';
 
 
 function Navbar() {
-
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
     );
@@ -34,65 +33,68 @@ function Navbar() {
         history.push('/login')
     }
 
+    var navbarComponent;
+
+    if (token != "") {
+        navbarComponent = <header id="header">
+            <Toolbar>
+                <img src="https://imgur.com/KdBVSES.png.png" alt="Projeto Igarapé Logo" className="imagem-logo" />
+            </Toolbar>
+            <nav id="nav">
+                <button id="btn-mobile">Projeto Igarapé</button>
+                <ul id="menu" className="just">
+                    <Link to='/home'>
+                        <Box mx={1}>
+                            <li><a href="/">Home</a></li>
+                        </Box>
+                    </Link>
+                    <Link to='/cadastroCategoria'>
+                        <Box mx={1} >
+                            <li><a href="/">Cadastrar Categoria</a></li>
+                        </Box>
+                    </Link>
+                    <Link to='/cadastroProduto'>
+                        <Box mx={1} >
+                            <li><a href="/">Cadastrar Produto</a></li>
+                        </Box>
+                    </Link>
+                    <Link to='/listaProduto'>
+                        <Box mx={1} >
+                            <li><a href="/">Produtos</a></li>
+                        </Box>
+                    </Link>
+                    <Link to='/cisterna'>
+                        <Box mx={1} >
+                            <li><a href="/">Cisterna</a></li>
+                        </Box>
+                    </Link>
+
+                    <Link to='/aboutus'>
+                        <Box mx={1}>
+                            <li><a href="/">Sobre Nós</a></li>
+                        </Box>
+                    </Link>
+                    <Link to='/contacts'>
+                        <Box mx={1} >
+                            <li><a href="/">Contato</a></li>
+                        </Box>
+                    </Link>
+                    <Link to='/login'>
+                        <Box mx={1} onClick={goLogout}>
+                            <li><a href="/">Logout</a></li>
+                        </Box>
+                    </Link>
+                    <Avatar className='just'>PI</Avatar>
+
+                    <img src="https://imgur.com/4lQ7zoc.png" alt="Carrinho" className="icons" />
+
+                </ul>
+            </nav>
+        </header>
+    }
     return (
         <>
-            <AppBar color="inherit">
-                <header id="header">
-                    <Toolbar>
-                        <img src="https://imgur.com/KdBVSES.png.png" alt="Projeto Igarapé Logo" className="imagem-logo" />
-                    </Toolbar>
-                    <nav id="nav">
-                        <button id="btn-mobile">Projeto Igarapé</button>
-                        <ul id="menu" className="just">
-                            <Link to='/home'>
-                                <Box mx={1}>
-                                    <li><a href="/">Home</a></li>
-                                </Box>
-                            </Link>
-                            <Link to='/cadastroCategoria'>
-                                <Box mx={1} >
-                                    <li><a href="/">Cadastrar Categoria</a></li>
-                                </Box>
-                            </Link>
-                            <Link to='/cadastroProduto'>
-                                <Box mx={1} >
-                                    <li><a href="/">Cadastrar Produto</a></li>
-                                </Box>
-                            </Link>
-                            <Link to='/listaProduto'>
-                                <Box mx={1} >
-                                    <li><a href="/">Produtos</a></li>
-                                </Box>
-                            </Link>
-                            <Link to='/cisterna'>
-                                <Box mx={1} >
-                                    <li><a href="/">Cisterna</a></li>
-                                </Box>
-                            </Link>
-
-                            <Link to='/aboutus'>
-                                <Box mx={1}>
-                                    <li><a href="/">Sobre Nós</a></li>
-                                </Box>
-                            </Link>
-                            <Link to='/contacts'>
-                                <Box mx={1} >
-                                    <li><a href="/">Contato</a></li>
-                                </Box>
-                            </Link>
-                            <Link to='/login'>
-                                <Box mx={1} onClick={goLogout}>
-                                    <li><a href="/">Logout</a></li>
-                                </Box>
-                            </Link>
-                            <Avatar className='just'>PI</Avatar>
-                            
-                            <img src="https://imgur.com/4lQ7zoc.png" alt="Carrinho" className="icons"/>
-                            
-                        </ul>
-                    </nav>
-                </header>
-            </AppBar>
+            {navbarComponent}
         </>
     )
 }
