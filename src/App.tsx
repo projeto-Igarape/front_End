@@ -16,6 +16,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Cisterna from './pages/cisterna/Cisterna';
 
 function App() {
   return (
@@ -72,6 +73,10 @@ function App() {
 
             <Route exact path='/deletarProduto/:id'>
               <DeletarProduto />
+            </Route>
+
+            <Route exact path='/cisterna'>
+              <Cisterna />
             </Route>
 
           </div>
