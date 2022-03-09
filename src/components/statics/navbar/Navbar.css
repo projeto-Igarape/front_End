@@ -3,6 +3,21 @@ body, ul {
     padding: 0;
 }
 
+.icons{
+    max-width:55px;
+    max-height:35px; 
+    padding-left: 10px;
+    margin: auto;
+}
+
+.just{
+    margin: auto;
+}
+
+avatar{
+    color: red !important;
+}
+
 button {
     color: white;
     font-weight: bold;
@@ -20,7 +35,7 @@ a:hover {
 
 .imagem-logo{
     height: 65px;
-    margin-right: 60px;
+    margin: auto;
 }
 
 #logo {

@@ -1,16 +1,14 @@
 import React from 'react';
-import { Box, Toolbar, AppBar } from '@material-ui/core';
+import { Box, Toolbar, AppBar, Icon } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import './Navbar.css'
-import useLocalStorage from 'react-use-localstorage';
 import { Avatar } from '@mui/material';
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../../store/tokens/actions';
-
 
 
 function Navbar() {
@@ -38,14 +36,14 @@ function Navbar() {
 
     return (
         <>
-        <AppBar color="inherit">
-            <header id="header" className="container-cabecalho">
-                <Toolbar>
-                    <img src="https://imgur.com/KdBVSES.png.png" alt="Projeto Igarapé Logo" className="imagem-logo" />
+            <AppBar color="inherit">
+                <header id="header">
+                    <Toolbar>
+                        <img src="https://imgur.com/KdBVSES.png.png" alt="Projeto Igarapé Logo" className="imagem-logo" />
                     </Toolbar>
-                    <nav id="nav" className="nav-links-cabecalho">
+                    <nav id="nav">
                         <button id="btn-mobile">Projeto Igarapé</button>
-                        <ul id="menu">
+                        <ul id="menu" className="just">
                             <Link to='/home'>
                                 <Box mx={1}>
                                     <li><a href="/">Home</a></li>
@@ -71,7 +69,7 @@ function Navbar() {
                                     <li><a href="/">Cisterna</a></li>
                                 </Box>
                             </Link>
-                            
+
                             <Link to='/aboutus'>
                                 <Box mx={1}>
                                     <li><a href="/">Sobre Nós</a></li>
@@ -87,9 +85,13 @@ function Navbar() {
                                     <li><a href="/">Logout</a></li>
                                 </Box>
                             </Link>
+                            <Avatar className='just'>PI</Avatar>
+                            
+                            <img src="https://imgur.com/4lQ7zoc.png" alt="Carrinho" className="icons"/>
+                            
                         </ul>
                     </nav>
-            </header>
+                </header>
             </AppBar>
         </>
     )
