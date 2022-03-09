@@ -31,13 +31,13 @@
 }
 
 .button1{
-    margin-right: 45px !important;
     color: white !important;
     background-color: #d82713 !important;
     font-weight: bold !important;
 }
 
 .buttton2{
+    margin-right: 45px !important;
     color: white !important;
     background-color: #00352c !important;
     font-weight: bold !important;

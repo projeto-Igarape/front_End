@@ -117,14 +117,14 @@ function CadastroUsuario() {
                             fullWidth
                         />
                         <Box marginTop={2} textAlign='center'>
+                        <Button type='submit' variant='contained' className="button-submit buttton2">
+                                Cadastrar
+                            </Button>
                         <Link to='/login' className='text-decorator-none'>
                                 <Button variant='contained' className="button-cancel button1">
                                     Cancelar
                                 </Button>
                                 </Link>
-                            <Button type='submit' variant='contained' className="button-submit buttton2">
-                                Cadastrar
-                            </Button>
                         </Box>
                     </form>
                 </Box>
