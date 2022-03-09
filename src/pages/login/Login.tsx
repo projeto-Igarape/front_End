@@ -2,12 +2,11 @@ import React, { ChangeEvent, useState, useEffect } from 'react';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
 import "./Login.css";
 import { addToken } from '../../store/tokens/actions';
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 
 function Login() {
 
@@ -46,7 +45,7 @@ function Login() {
                 theme: 'colored',
                 progress: undefined,
             });
-           
+
         } catch (error) {
             toast.error('Dados inconsistentes!', {
                 position: "top-right",
@@ -58,45 +57,41 @@ function Login() {
                 theme: 'colored',
                 progress: undefined,
             });
-    
-       }
+
+        }
     }
 
-    return(
-       <Grid container direction ='row' justifyContent='center' alignItems='center'  style={{ backgroundColor: "#2191D1"}}> 
-           <Grid alignItems='center' xs={6}>
-               <Box paddingX={20}>
+    return (
+        <Grid container direction='row'>
+            <Grid className="container">
+                <Box className="card">
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='txt1'>Entrar</Typography>
-                        <TextField  value={userLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='e-mail' variant='outlined' name='email' margin='normal' fullWidth/>
-                        <TextField  value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth/>
+                        <Typography variant='h3' gutterBottom component='h3' className='text1'>Entrar</Typography>
+                        <TextField value={userLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='e-mail' variant='outlined' name='email' fullWidth />
+                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <Box marginTop={2} textAlign='center'>
-                        
-                            <Button type='submit' variant='outlined' color='primary' style={{ borderColor: "white", backgroundColor: "#2191D1", color: "white", textDecoration:'none' }} >
+
+                            <Button type='submit' variant='contained' color='primary' className='button2' >
                                 Logar
                             </Button>
-                        
                         </Box>
                     </form>
-                </Box>
-               
-               <Box display='flex' justifyContent='center' marginTop={2}>
-                    <Box marginRight={1}>
-                        <Typography variant='subtitle1' gutterBottom align='center'> Não tem uma conta?</Typography>
+                    <Box display='flex' justifyContent='center' marginTop={2}>
+                        <Box marginRight={1}>
+                            <Typography variant='subtitle1' gutterBottom align='center'> Não tem uma conta?</Typography>
+                        </Box>
+                        <Link to='/cadastroUsuario' className='text-decorator-none'>
+                            <Typography variant='subtitle1' gutterBottom align='center' className='text2'>Cadastre-se</Typography>
+                        </Link>
+
                     </Box>
-                    <Link to='/cadastrousuario'> 
-                        <Typography variant='subtitle1' gutterBottom align='center' className='txt1'>Cadastre-se</Typography>
-                    </Link>
-               </Box>
+                </Box>
+            </Grid>
+            <Grid item xs={6}>
 
             </Grid>
-            <Grid xs={6}>
-            <img src="https://imgur.com/5Sp2B3x.png" alt="" width="605px" height="379px" />
-            
-            </Grid>
-       </Grid>
-
-    )  
+        </Grid >
+    );
 }
 
 export default Login;

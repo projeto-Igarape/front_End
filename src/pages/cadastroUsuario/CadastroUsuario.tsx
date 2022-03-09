@@ -69,12 +69,11 @@ function CadastroUsuario() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid item xs={6} className='imagem2'></Grid>
-            <Grid item xs={6} alignItems='center'>
-                <Box paddingX={10}>
+        <Grid container direction='row'>
+            <Grid className='container_cadastro'>
+                <Box className='card_cadastro'>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
+                        <Typography variant='h3' component='h3' className='texto_cadastro'>Cadastrar</Typography>
                         <TextField
                             value={user.nome}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
@@ -118,22 +117,20 @@ function CadastroUsuario() {
                             fullWidth
                         />
                         <Box marginTop={2} textAlign='center'>
-                        
-                                <Button type='submit' variant='contained' color='primary'>
-                                    Cadastrar
+                        <Link to='/login' className='text-decorator-none'>
+                                <Button variant='contained' className="button-cancel button1">
+                                    Cancelar
                                 </Button>
-                                
-                            <Link to='/login' className='text-decorator-none'>
-                            <Button variant='contained' color='secondary' className='btnCancelar'>
-                                Cancelar
+                                </Link>
+                            <Button type='submit' variant='contained' className="button-submit buttton2">
+                                Cadastrar
                             </Button>
-                            </Link>
                         </Box>
                     </form>
                 </Box>
             </Grid>
         </Grid>
-    )
+    );
 }
 
 export default CadastroUsuario;

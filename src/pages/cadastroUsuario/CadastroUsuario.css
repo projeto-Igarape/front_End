@@ -1,16 +1,57 @@
-.imagem2{
-    background-image: url(https://imgur.com/MeXd0xZ.jpg);
-    background-repeat: no-repeat;
-    width: 100vh;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto';
 }
 
-.textos2{
+.container_cadastro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 60px;
+    border-radius: 4px;
+    padding: 26px;
+}
+
+.card_cadastro{
+    background-color: #ffffff80;
+    padding: 40px;
+    border-radius: 6%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    position: absolute;
+    width: 470px;
+   
+}
+
+.texto_cadastro{
+    text-align: center !important;
+    font-weight: bold !important;
+    color: #00352c !important;
+}
+
+.button1{
+    margin-right: 45px !important;
+    color: white !important;
+    background-color: #d82713 !important;
     font-weight: bold !important;
 }
 
-.btnCancelar{
-    margin-right: 20px !important;
+.buttton2{
+    color: white !important;
+    background-color: #00352c !important;
+    font-weight: bold !important;
+}
+
+.button-cancel {
+    margin-right: 40px!important;
+}
+
+.button-submit {
+    text-decoration: none!important;
+    background-color: #00352c!important;
+}
+
+.field {
+	label: #00352c!important;
 }
