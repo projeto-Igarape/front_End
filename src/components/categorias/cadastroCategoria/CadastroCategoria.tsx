@@ -16,9 +16,9 @@ function CadastroCategoria() {
 
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
-    const token = useSelector<TokenState, TokenState['tokens']>(
+    const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-    );
+      );
 
     const [categoria, setCategoria] = useState<Categoria>({
         id: 0, descricao: '', secao: ''

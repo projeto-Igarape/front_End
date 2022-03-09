@@ -6,16 +6,23 @@ import './Navbar.css'
 import useLocalStorage from 'react-use-localstorage';
 import { Avatar } from '@mui/material';
 import {toast} from 'react-toastify';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../../store/tokens/actions';
 
 
 
 function Navbar() {
 
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState['tokens']>(
+        (state) => state.tokens
+    );
     let history = useHistory();
+    const dispatch = useDispatch();
 
     function goLogout() {
-        setToken('')
+        dispatch(addToken(''));
         toast.info('Usuário deslogado!', {
             position: "top-right",
             autoClose: 5000,

@@ -18,7 +18,7 @@ function ListaCategoria() {
   let history = useHistory();
 
   useEffect(() => {
-    if (token === '') {
+    if (token == '') {
       toast.error('Você precisa estar logado', {
         position: "top-right",
         autoClose: 5000,
