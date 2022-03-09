@@ -2,6 +2,7 @@ import React from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import YoutubeIcon from '@material-ui/icons/YouTube';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import {Grid, Box, Typography} from '@material-ui/core';
 import './Footer.css'
@@ -16,18 +17,19 @@ function Footer(){
     return (
         <>
                 <footer className='footer'>
-                <Box className='box'>
+                
                 
                                 <Box display="flex" alignItems="left" justifyContent="left">
                                    <a href="http://localhost:3000/home">
                                     <img src="https://imgur.com/KdBVSES.png.png" alt="Projeto Igarapé Logo" className="img-logo" />
                                     </a>
+                                    <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center" className='font'>
+                                <Typography variant="h5" align="center" gutterBottom>Projeto Igarapé </Typography>                            
+                                </Box>  
                                 </Box>
                                                  
-                            </Box>
-                            <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center" className='font'>
-                                <Typography variant="h5" align="center" gutterBottom>Projeto Igarapé </Typography>                            
-                                </Box>    
+                            
+                              
                  <div className='container'>
                      
                              <div className='footer-col'>
@@ -57,6 +59,7 @@ function Footer(){
                             <div className='social-links'>
                                 <a href ='https://www.facebook.com/thatipiress/'><FacebookIcon /></a>
                                 <a href="https://instagram.com/thatipiresss"><InstagramIcon/></a>
+                                <a href="https://youtube.com"><YoutubeIcon/></a>
                                 <a href="https://www.linkedin.com/in/thatipiresss/"><LinkedInIcon /></a>
                                 <a href="https://github.com/thatipiresss"><GitHubIcon/></a>
                             </div>

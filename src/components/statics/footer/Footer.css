@@ -6,7 +6,7 @@
 
 .img-logo{
     height: 100px;
-    margin-right: 100px;
+    margin-right: 0px;
     position: right
 ;
 }
@@ -38,7 +38,7 @@ ul{
 }
 .footer{
     background-color:#2191D199 !important ;
-    padding: 70px 0;
+    padding: 20px 0;
     width: 100%
    }
 
@@ -130,16 +130,18 @@ ul{
         width:100%;
    }
   }
-
-/*.box{
+  .box{
     height: 50px !important;
     background-color: #4AAAE1 !important;
 }
+
 .font{
     color: white !important;
     font-size: 30 !important;
     text-decoration: none !important;
 }
+/*
+
 .box1{
     height: 80px;
     background-color: #4AAAE1 !important;
