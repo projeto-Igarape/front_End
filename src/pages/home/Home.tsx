@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
+import {toast} from 'react-toastify';
+
 
 import './Home.css';
 
@@ -20,7 +22,17 @@ function Home(){
 
     useEffect(() => {
         if(token =='') {
-            alert('Faça o login!')
+            toast.error('Faça o login!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined,
+            });
+        
             history.push('/login')
         }
     }, [token])

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import {toast} from 'react-toastify';
+
 import {Box, Card, CardActions, CardContent, Button, Typography} from '@material-ui/core';
 import './DeletarCategoria.css';
 import { useHistory, useParams } from 'react-router-dom';
@@ -18,7 +20,16 @@ function DeletarCategoria() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            theme: 'colored',
+            progress: undefined,
+        });
             history.push("/login")
     
         }
@@ -45,7 +56,16 @@ function DeletarCategoria() {
                 'Authorization': token
               }
             });
-            alert('Categoria deletada com sucesso');
+              toast.success('Categoria deletada com sucesso', {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: false,
+              theme: 'colored',
+              progress: undefined,
+          });
           }
         
           function nao() {

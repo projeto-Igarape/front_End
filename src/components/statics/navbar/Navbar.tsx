@@ -5,6 +5,8 @@ import { useHistory } from 'react-router-dom';
 import './Navbar.css'
 import useLocalStorage from 'react-use-localstorage';
 import { Avatar } from '@mui/material';
+import {toast} from 'react-toastify';
+
 
 
 function Navbar() {
@@ -14,7 +16,16 @@ function Navbar() {
 
     function goLogout() {
         setToken('')
-        alert('Usuário deslogado!')
+        toast.info('Usuário deslogado!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            theme: 'colored',
+            progress: undefined,
+        });
         history.push('/login')
     }
 

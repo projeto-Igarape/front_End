@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
+import {toast} from 'react-toastify';
 import { useHistory, useParams } from 'react-router-dom';
 import { Container, Typography, TextField, Button } from '@material-ui/core';
 
@@ -25,7 +26,16 @@ function CadastroCategoria() {
 
     useEffect(() => {
         if (token == '') {
-            alert("Você precisa estar logado!")
+            toast.error('Você precisa estar logado', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined,
+            });
             history.push('/login')
         }
     }, [history, token])
@@ -60,14 +70,34 @@ function CadastroCategoria() {
                     'Authorization': token
                 }
             })
-            alert('Categoria atualizada!')
+            toast.success('Categoria atualizada!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined,
+            });
+            
         } else {
             post(`/categorias`, categoria, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Categoria cadastrada!')
+            toast.success('Categoria cadastrada!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined,
+            });
+          
         }
         back()
     }

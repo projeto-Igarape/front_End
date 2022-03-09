@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {toast} from 'react-toastify';
 import { Link } from 'react-router-dom'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaCategoria.css';
@@ -18,7 +19,16 @@ function ListaCategoria() {
 
   useEffect(() => {
     if (token === '') {
-      alert('Você precisa estar logado')
+      toast.error('Você precisa estar logado', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        theme: 'colored',
+        progress: undefined,
+    });
       history.push("/login")
     }
   }, [token])
