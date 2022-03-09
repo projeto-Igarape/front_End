@@ -1,7 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 
 import Categoria from '../../../models/Categoria';
 import Produto from '../../../models/Produto';
@@ -9,12 +8,16 @@ import Produto from '../../../models/Produto';
 import './CadastroProduto.css';
 
 import { busca, buscaID, post, put } from '../../../services/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function CadastroProduto() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
     const [categorias, setCategorias] = useState<Categoria[]>([]) 
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState['tokens']>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token === "") {

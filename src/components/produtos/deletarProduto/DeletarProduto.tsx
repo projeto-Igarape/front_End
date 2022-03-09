@@ -2,15 +2,18 @@ import React, { useEffect, useState } from 'react'
 import {Box, Card, CardActions, CardContent, Button, Typography} from '@material-ui/core';
 import './DeletarProduto.css';
 import { useHistory, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { buscaID, deleteID } from '../../../services/Service';
 import Produto from '../../../models/Produto';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 
 function DeletarProduto() {
     let history = useHistory();
     const { id } = useParams<{id: string}>();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState['tokens']>(
+      (state) => state.tokens
+  );
     const [produto, setProduto] = useState<Produto>()
 
     useEffect(() => {
