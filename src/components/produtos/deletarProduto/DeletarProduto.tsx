@@ -73,11 +73,11 @@ function DeletarProduto() {
   return (
     <>
       <Box m={2}>
-        <Card variant="outlined">
+        <Card className="card" variant="outlined">
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
-                Deseja deletar o Produto:
+                Deletar o produto:
               </Typography>
               <Typography color="textSecondary">
                 {produto?.nome}

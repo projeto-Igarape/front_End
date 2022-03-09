@@ -53,8 +53,8 @@ function ListaProduto() {
       {
         produtos.map(produto => (
           <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
+            <Card className="card" variant="outlined">
+              <CardContent className="card2">
                 <Typography color="textSecondary" gutterBottom>
                   Produto
                 </Typography>
@@ -75,15 +75,15 @@ function ListaProduto() {
                 <Box display="flex" justifyContent="center" mb={1.5} >
 
                   <Link to={`/cadastroProduto/${produto.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                    <Box className="card2" mx={1}>
+                      <Button className="btn-atualizar" variant="contained" size='small' color="primary" >
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                      <Button className="btn2" variant="contained" size='small' color="secondary">
                         deletar
                       </Button>
                     </Box>

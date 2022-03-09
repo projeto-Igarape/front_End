@@ -132,9 +132,9 @@ function CadastroProduto() {
     }
 
     return (
-        <Container maxWidth="sm" className="topo">
+        <Container className="container2" maxWidth="sm">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastro de produto</Typography>
+                <Typography className="space" variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um produto</Typography>
                 <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
                 <TextField value={produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço" name="preco" variant="outlined" margin="normal" fullWidth />
                 <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth />
@@ -156,8 +156,8 @@ function CadastroProduto() {
                         }
                     </Select>
                     <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
-                        Finalizar
+                    <Button className="btn" type="submit" variant="contained" color="primary">
+                        Confirmar
                     </Button>
                 </FormControl>
             </form>

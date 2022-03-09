@@ -1,3 +1,23 @@
-.text-decorator-none{
-    text-decoration: none;
+/* .text-decorator-none{
+    text-decoration: none!important;
+    align-items: flex-start!important;
+} */
+
+.card {
+    padding: 5px!important;
+    margin: 25px!important; 
 }
+
+.card2 {
+    padding: -5px!important;
+    margin: 0px 0px!important; 
+}
+
+.btn-atualizar {
+    background-color: #2191D199!important;
+    text-decoration: none!important;
+}
+
+/* .marginLeft {
+    margin-left: 0.2px!important;
+} */
