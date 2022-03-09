@@ -1,30 +1,31 @@
-.backabout{
-    background: linear-gradient(to right, b#2090d1, white);
+.backcister{
+    background-image: url('../../assets/img/cisternas2.jpg.crdownload') ;
     background-repeat: no-repeat;
-    width: 100vh;
-    min-height: calc(100vh - 64px);
-
+    width: 110vh;
+    min-height: calc(100vh - 64px); 
     background-size: cover;
-    background-position: center;
+    background-position: right !important;
 }
 
-.titulosobre{
+.titulocis{
     margin-left: 250px;
     color: white !important;
-    background-image: linear-gradient(to right, #2090d1 10%, #77daf3 35%, #2090d1 85%);
-    width: 100vh;
+    background-image: linear-gradient(to right, #999494 10%, #afaaaa 35%, #999494 85%);
+    width: 150vh;
     align-content: center;
+    opacity: 0.8;
 
     
 }
 
-.titulosobre1{
-    margin-top: 100px;
+.titulocis1{
+    margin-top: 100px !important;
     color: white !important;
-    background-image: linear-gradient(to right, #2090d1, white);
-    width: 100vh;    
+    background-image: linear-gradient(to right, #999494, #afaaaa);
+    width: 150vh;    
     font-weight: bold;    
     text-align: center !important;
+    
         
 }
 
@@ -47,15 +48,17 @@
 
 .saibamais{
     
-    color: black !important;
+    color: white !important;
     text-decoration: none;
     font-weight: bold;
+    text-align: left !important;
 }
 
 .clique{
     margin-top: 50px;
-    color: black !important;
+    color: white !important;
     text-decoration: none;
     font-weight: bold;
+    text-align: left !important;
     
 }

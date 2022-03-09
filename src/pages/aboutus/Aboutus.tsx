@@ -1,31 +1,107 @@
-import React from 'react';
-import {Grid, Typography, Box, Button} from '@material-ui/core';
+import React, { useEffect } from 'react';
+import {Grid, Typography, Box} from '@material-ui/core';
 import './Aboutus.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
+import {toast} from 'react-toastify';
 
 
-function Aboutus() {
+function Aboutus() {    
+    let history = useHistory();
+    const token = useSelector<TokenState, TokenState['tokens']>(
+        (state) => state.tokens
+    );
+      
+    
+      useEffect(() => {
+        if (token === '') {
+            toast.error('Você precisa estar logado', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            theme: 'colored',
+            progress: undefined,
+        });
+          history.push("/login")
+        }
+      }, [token])
+
+      
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#2191D1" }}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='backabout1'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a).</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>Conectando caminhos e orientando para o futuro.</Typography>
+                        <Typography className='titulosobre1' variant="h3" gutterBottom color="textPrimary" component="h3" align="center" >Sobre nós</Typography>
+                        <Typography className='titulosobre' variant="h5" gutterBottom color="textPrimary" component="h5" align="center" >
+                            
+                            <p>
+                            O Projeto Igarapé nasceu na Generation Brasil, onde, com base nos Objetivos de Desenvolvimento Sustentável sobre Água Potável e saneamento, temos como principal 
+                            intuito  melhorar a disponibilização de água potável para consumo e saneamento básico em comunidades de baixa renda, além de conectar para orientar sobre a gestão 
+                            sustentável da água potável e do saneamento para todos.
+                            </p>
+
+                            <p>
+                            Acreditamos que a escassez de água potável e a falta de saneamento básico, traz riscos iminentes à saúde, uma vez que é um recurso natural indispensável e essencial 
+                            para a vida.
+                            </p>
+
+                            <p>
+                            Muitas comunidades de baixa renda não têm acesso ao mínimo do saneamento básico e/ou água potável e própria para consumo (Cerca de 35 milhões de brasileiros). 
+                            Pessoas ficam mais doentes do que o normal por não terem acesso a um recurso natural indispensável e essencial.  
+                            </p>
+
+                            <p>
+                            Na pandemia, a situação se agravou ainda mais, já que, de acordo com a Organização Mundial da Saúde (OMS), a lavagem completa das mãos está entre as medidas mais eficazes 
+                            para limitar a propagação da covid-19.
+                            </p>
+
+                            <p>
+                            Contamos com essa iniciativa para arrecadar valores que serão revertidos na compra de cisternas, possibilitando a coleta e tratamento da água da chuva e reutilização de água 
+                            armazenada nelas.
+                            </p>
+
+                            <p>
+                            Inicialmente implantaremos esse sistema de captação de água, na comunidade da Tribo, localizada no bairro Jardim Damasceno, Zona Norte de São Paulo. A favela fica em uma 
+                            pequena parte ocupada de uma área de 461 mil m² de terreno acidentado e íngreme às margens da serra da Cantareira. Vivem ali cerca de mil famílias. 
+                            </p>
+
+                            <p>
+                            As famílias beneficiadas são capacitadas pelo próprio Projeto, através de um cadastro, onde a partir do mesmo conseguimos contatá-las. Assim o processo de implementação das 
+                            tecnologias é realizado em regime de cooperação, gerando sentimento de pertencimento, o que promove maior sustentabilidade ao equipamento instalado. 
+                            </p>
+                            
+                        </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         <Link to="/aboutus" className="text-decorator-none"> </Link>                    
                     </Box>       
 
-                    
-                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
+                    <Box marginRight={1}>
+                            <Typography className='saibamais1' variant='subtitle1' gutterBottom align='center'> Quer saber mais sobre o projeto?</Typography>
+                        </Box>
+                        <Link to='/cisterna'>
+                        <Typography variant='subtitle1' gutterBottom align='center' className="clique1">Clique aqui!</Typography>
+                        </Link>
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://imgur.com/jOBJ0DL.png" alt="" width="685px" height="479px" />
+                <Grid item xs={6} className='about'>
+                    
                 </Grid>
-                <Grid xs={12} style={{ backgroundColor: "white" }}>
+                <Grid xs={12} >
+                <Box className='boxnos'>
+                <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
+                    <Typography variant="h5" align="center" gutterBottom className='textosnos'>Conheça os integrantes do grupo </Typography>
+                </Box>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                   
+                </Box>
+            </Box>
                 </Grid>
             </Grid>
         </>

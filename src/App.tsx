@@ -17,6 +17,7 @@ import store from './store/store';
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Cisterna from './pages/cisterna/Cisterna';
+import Aboutus from './pages/aboutus/Aboutus';
 
 function App() {
   return (
@@ -77,6 +78,10 @@ function App() {
 
             <Route exact path='/cisterna'>
               <Cisterna />
+            </Route>
+
+            <Route exact path='/aboutus'>
+              <Aboutus />
             </Route>
 
           </div>
