@@ -1,64 +1,81 @@
- .backabout1{
+.backabout1{
     background: linear-gradient(to right, b#2090d1, white);
     background-repeat: no-repeat;
-
-    min-height: calc(100vh - 64px);
     background-image: url('../../assets/img/sobre.jpg');
     background-size: cover;
-
-} 
+}
 
 .titulosobre{
     margin-right: 50px!important;
     color: white !important;
-    width: 100vh;
-    text-align: justify;
+    width: 100vw;
     opacity: 0.9;
-    width: 90vw;
+    text-align: left!important;
+    text-align: justify!important;
 }
 
 .titulosobre1{
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 35px;
     color: white !important;
     background-image: linear-gradient(to right, #01273a,  #7f906e);
     width: 100vw;     
     font-weight: bold;    
-    text-align: center !important;
-        
+    text-align: center !important;        
 }
 
-
-/* .about{
-
+.about{
+    text-align: left!important;
     background-image: linear-gradient(to right, b#0a3f5e, white);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: calc(100vh - 64px);
     background-size: contain;
-  
+    margin-bottom: 120px!important;
+}
 
-} */
 
 .saibamais1{
-    margin-top: 50px;
+    margin-top: 120px;
     color: white !important;
     text-decoration: none;
+    text-align: left!important;
 }
 
 .clique {
+    margin: 0px;
     font-weight: bold;
+    text-align: left!important;
 }
 
-/* .clique1{ 
+.clique1{ 
     margin-top: 50px;
     color: white !important;
     text-decoration: none;
     font-weight: bold;
     
-} */
+}
 
 .textosnos{
     color: white;
+    margin-top: 120px!important;
+}
+
+.box10 {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-img {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+.txt-img2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 
