@@ -16,7 +16,7 @@
 
 .card_cadastro{
     background-color: #ffffff99;
-    padding: 60px;
+    padding: 50px;
     border-radius: 6%;
     box-shadow: 3px 3px 1px 0px #00000060;
     position: absolute;
@@ -24,9 +24,10 @@
 }
 
 .texto_cadastro{
-    text-align: center !important;
+    text-align: center;
+    margin-bottom: 20px;
     font-weight: bold !important;
-    color: #00352c !important;
+    color: #00352c !important
 }
 
 .botao_ajuste{
