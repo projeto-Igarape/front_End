@@ -1,18 +1,18 @@
-.container-categoria{
+.container_cadcategoria{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
     
 }
-.card0{
+.card_cadcategoria{
     background-color: #ffffffa1;
-    padding: 70px;
-    border-radius: 6%;  
+    padding: 50px;
+    border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 70px;
+    margin-top: 20px;
 }
-.text0{
+.text_cadcategoria{
     font-size: 23px;
     font-weight: 600;
     padding-block-end: 3px;
@@ -25,11 +25,10 @@
     outline: none;
     font-size: 16px;
     background: #F0F1F899;
-    border-radius: 6px;
-    padding: 15px;
+    
     resize: none;
 }
-.button0{
+.button_cadcategoria{
   color: #fff;
   font-size: 18px;
   outline: none;
