@@ -12,7 +12,6 @@ function Aboutus() {
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
     );
-      
     
       useEffect(() => {
         if (token === '') {
@@ -26,7 +25,7 @@ function Aboutus() {
             theme: 'colored',
             progress: undefined,
         });
-          history.push("/login")
+          history.push("/aboutus")
         }
       }, [token])
 
@@ -44,32 +43,32 @@ function Aboutus() {
                             intuito  melhorar a disponibilização de água potável para consumo e saneamento básico em comunidades de baixa renda, além de conectar para orientar sobre a gestão 
                             sustentável da água potável e do saneamento para todos.
                             </p>
-
+                            <br/>
                             <p>
                             Acreditamos que a escassez de água potável e a falta de saneamento básico, traz riscos iminentes à saúde, uma vez que é um recurso natural indispensável e essencial 
                             para a vida.
                             </p>
-
+                            <br/>
                             <p>
                             Muitas comunidades de baixa renda não têm acesso ao mínimo do saneamento básico e/ou água potável e própria para consumo (Cerca de 35 milhões de brasileiros). 
                             Pessoas ficam mais doentes do que o normal por não terem acesso a um recurso natural indispensável e essencial.  
                             </p>
-
+                            <br/>
                             <p>
                             Na pandemia, a situação se agravou ainda mais, já que, de acordo com a Organização Mundial da Saúde (OMS), a lavagem completa das mãos está entre as medidas mais eficazes 
                             para limitar a propagação da covid-19.
                             </p>
-
+                            <br/>
                             <p>
                             Contamos com essa iniciativa para arrecadar valores que serão revertidos na compra de cisternas, possibilitando a coleta e tratamento da água da chuva e reutilização de água 
                             armazenada nelas.
                             </p>
-
+                            <br/>
                             <p>
                             Inicialmente implantaremos esse sistema de captação de água, na comunidade da Tribo, localizada no bairro Jardim Damasceno, Zona Norte de São Paulo. A favela fica em uma 
                             pequena parte ocupada de uma área de 461 mil m² de terreno acidentado e íngreme às margens da serra da Cantareira. Vivem ali cerca de mil famílias. 
                             </p>
-
+                            <br/>
                             <p>
                             As famílias beneficiadas são capacitadas pelo próprio Projeto, através de um cadastro, onde a partir do mesmo conseguimos contatá-las. Assim o processo de implementação das 
                             tecnologias é realizado em regime de cooperação, gerando sentimento de pertencimento, o que promove maior sustentabilidade ao equipamento instalado. 

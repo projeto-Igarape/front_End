@@ -11,19 +11,20 @@ body{
     background-attachment: fixed;
 }
 
-.container {
+.container_login {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 100px;
 }
 
-.card{
-    background-color: #ffffff80;
-    padding: 100px;
+.card_login{
+    background-color: #ffffff99;
+    padding: 40px;
     border-radius: 6%;
     box-shadow: 3px 3px 1px 0px #00000060;
-    
+    position: absolute;
+    width: 490px;
 }
 
 

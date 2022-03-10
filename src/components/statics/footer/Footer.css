@@ -36,6 +36,14 @@ ul{
     display:flex;
     flex-wrap: wrap;
 }
+
+.container_footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
 .footer{
     background-color:#2191D199 !important ;
     padding: 20px 0;
