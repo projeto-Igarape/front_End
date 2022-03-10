@@ -133,14 +133,14 @@ function CadastroProduto() {
 
     return (
         <Container className="container2" maxWidth="sm">
-            <form onSubmit={onSubmit} className='card' >
+            <form onSubmit={onSubmit} className='card78' >
                 <Typography className="space" variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um produto</Typography>
-                <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
-                <TextField value={produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço" name="preco" variant="outlined" margin="normal" fullWidth />
-                <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth />
+                <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth className='input-box78' />
+                <TextField value={produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço" name="preco" variant="outlined" margin="normal" fullWidth className='input-box78'/>
+                <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth className='input-box78'/>
 
-                <FormControl>
-                    <InputLabel id="demo-simple-select-helper-label">Categoria</InputLabel>
+                <FormControl >
+                    <InputLabel id="demo-simple-select-helper-label" className="space">Categoria</InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
@@ -155,7 +155,7 @@ function CadastroProduto() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
+                    <FormHelperText className="space">Escolha uma categoria para o produto</FormHelperText>
                     <Button className="btn" type="submit" variant="contained" color="primary">
                         Confirmar
                     </Button>

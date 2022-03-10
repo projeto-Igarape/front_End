@@ -2,20 +2,43 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .space {
     margin-bottom: 20px!important;
+    font-size: 23px;
+    font-weight: 600;
+    padding-block-end: 3px;
+    color: #00352c !important;
 }
 
 .btn {
     margin-top: 20px!important;
-    background-color: #2191D199!important;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #00352c !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-.card{
-    background-color: #ffffff80;
-    padding: 100px;
-    border-radius: 6%;
-    box-shadow: 3px 3px 1px 0px #00000060;
+.card78{
+    background-color: #ffffffa1;
+    padding: 35px;
+    border-radius: 6%;   
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.input-box78{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F899;
+    border-radius: 6px;
+    padding: 15px;
+    resize: none;
 }

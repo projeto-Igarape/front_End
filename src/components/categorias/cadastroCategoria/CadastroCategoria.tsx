@@ -107,12 +107,12 @@ function CadastroCategoria() {
     }
 
     return (
-        <Container maxWidth="sm" className='container_categoria'>
-            <form onSubmit={onSubmit} className='card' >
-                <Typography variant="h3" color="textSecondary" component="h1" align="center">Formulário</Typography>
-                <TextField value={categoria.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <TextField value={categoria.secao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id="secao" label="Seção" variant="outlined" name="secao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+        <Container maxWidth="sm" className='container-categoria'>
+            <form onSubmit={onSubmit} className='card0' >
+                <Typography variant="h3" color="textSecondary" component="h2" align="center" className='text0' >Cadastre uma Categoria</Typography>
+                <TextField value={categoria.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth className='input-box2' />
+                <TextField value={categoria.secao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id="secao" label="Seção" variant="outlined" name="secao" margin="normal" fullWidth className='input-box2' />
+                <Button type="submit" variant="contained" color="primary" className='button0'>
                     Finalizar
                 </Button>
             </form>
