@@ -33,7 +33,7 @@ function Footer(){
                                                  
                             
                               
-                 <div className='container'>
+                 <div className='container_footer'>
                      
                              <div className='footer-col'>
                             <h4>aba1</h4>                    
