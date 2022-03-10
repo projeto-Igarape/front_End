@@ -9,19 +9,18 @@
     justify-content: center;
     width: 100%;
     font-size: 12px;
-    margin-top: 60px;
+    margin-top: 25px;
     border-radius: 4px;
     padding: 26px;
 }
 
 .card_cadastro{
-    background-color: #ffffff80;
-    padding: 40px;
+    background-color: #ffffff99;
+    padding: 60px;
     border-radius: 6%;
     box-shadow: 3px 3px 1px 0px #00000060;
     position: absolute;
-    width: 470px;
-   
+    width: 490px;
 }
 
 .texto_cadastro{
@@ -30,11 +29,12 @@
     color: #00352c !important;
 }
 
-.button1{
+.botao_ajuste{
     color: white !important;
-    background-color: #d82713 !important;
+    background-color: #d0261a !important;
     font-weight: bold !important;
 }
+
 
 .buttton2{
     margin-right: 45px !important;

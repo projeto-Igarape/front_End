@@ -63,8 +63,8 @@ function Login() {
 
     return (
         <Grid container direction='row'>
-            <Grid className="container">
-                <Box className="card">
+            <Grid className="container_login">
+                <Box className="card_login">
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom component='h3' className='text1'>Entrar</Typography>
                         <TextField value={userLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' fullWidth />

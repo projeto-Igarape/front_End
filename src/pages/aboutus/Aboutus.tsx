@@ -12,7 +12,6 @@ function Aboutus() {
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
     );
-      
     
       useEffect(() => {
         if (token === '') {
@@ -26,7 +25,7 @@ function Aboutus() {
             theme: 'colored',
             progress: undefined,
         });
-          history.push("/login")
+          history.push("/aboutus")
         }
       }, [token])
 

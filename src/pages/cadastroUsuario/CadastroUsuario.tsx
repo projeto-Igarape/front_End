@@ -121,7 +121,7 @@ function CadastroUsuario() {
                                 Cadastrar
                             </Button>
                         <Link to='/login' className='text-decorator-none'>
-                                <Button variant='contained' className="button-cancel button1">
+                                <Button variant='contained' className="botao_ajuste">
                                     Cancelar
                                 </Button>
                                 </Link>
