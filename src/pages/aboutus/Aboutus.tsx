@@ -112,7 +112,7 @@ function Aboutus() {
                 </Grid>
             </Grid>
 
-            <Box className="box10" paddingX={20} display="flex">
+            {/* <Box className="box10" paddingX={20} display="flex"> 
                 <div>
                     <div className="txt-img">
                         <p>fulano</p>
@@ -135,7 +135,7 @@ function Aboutus() {
                         />
                     </div>
                 </div>
-            </Box>
+            </Box>*/}
         </>
     )
 }
