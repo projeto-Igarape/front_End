@@ -8,6 +8,7 @@ import { Grid, Box, Typography } from '@material-ui/core';
 import './Footer.css'
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 
@@ -18,7 +19,7 @@ function Footer() {
     var footerComponent;
 
 
-    if (token != "") {
+    if (token !== "") {
         footerComponent = <footer className='footer'>
 
 
@@ -30,17 +31,16 @@ function Footer() {
 
 
             <div className='container_footer'>
-            <a href="http://localhost:3000/home">
-                    <img src="https://imgur.com/IRDrtBS.png" alt="Projeto Igarapé Logo" className="img-logo" />
-                </a>
-                
+                <Link to="http://localhost:3000/home"></Link>
+                <img src="https://imgur.com/IRDrtBS.png" alt="Projeto Igarapé Logo" className="img-logo" />
+
                 <div className='footer-col'>
                     <h4>O que somos?</h4>
                     <ul>
-                        <li><a href='/listaProduto'>Produtos</a></li>
-                        <li><a href='/aboutus'>Sobre Nós</a></li>
-                        <li><a href='/parceiros'>Parceiros</a></li>
-                        <li><a href='/cisterna'>Cisterna</a></li>
+                        <Link to='/listaProduto'>Produtos</Link>
+                        <Link to='/aboutus'>Sobre Nós</Link>
+                        <Link to='/parceiros'>Parceiros</Link>
+                        <Link to='/cisterna'>Cisterna</Link>
                     </ul>
                 </div>
 
@@ -48,21 +48,21 @@ function Footer() {
                 <div className='footer-col'>
                     <h4>Fale conosco</h4>
                     <ul>
-                        <li><a href='/contacts'>Contato</a></li>
-                        <li><a href='/contacts'>Seja um parceiro</a></li>
-                        <li><a href='/contacts'>Trabalhe Conosco</a></li>
-                        <li><a href='/teste'>Termos & Condições</a></li>
+                        <Link to='/contacts'>Contato</Link>
+                        <Link to='/contacts'>Seja um parceiro</Link>
+                        <Link to='/contacts'>Trabalhe Conosco</Link>
+                        <Link to='/teste'>Termos & Condições</Link>
                     </ul>
                 </div>
 
                 <div className='footer-col'>
                     <h4>Nossas redes</h4>
                     <div className='social-links'>
-                        <a href='https://www.facebook.com/thatipiress/'><FacebookIcon /></a>
-                        <a href="https://instagram.com/thatipiresss"><InstagramIcon /></a>
-                        <a href="https://youtube.com"><YoutubeIcon /></a>
-                        <a href="https://www.linkedin.com/in/thatipiresss/"><LinkedInIcon /></a>
-                        <a href="https://github.com/thatipiresss"><GitHubIcon /></a>
+                        <Link to='https://www.facebook.com/thatipiress/'><FacebookIcon /></Link>
+                        <Link to="https://instagram.com/thatipiresss"><InstagramIcon /></Link>
+                        <Link to="https://youtube.com"><YoutubeIcon /></Link>
+                        <Link to="https://www.linkedin.com/in/thatipiresss/"><LinkedInIcon /></Link>
+                        <Link to="https://github.com/thatipiresss"><GitHubIcon /></Link>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@ function Footer() {
                     </Box>
                 </div>
             </Box>
-        
+
 
         </footer >
     }

@@ -3,18 +3,19 @@ import {Typography, Box, Grid, Button} from '@material-ui/core';
 import {toast} from 'react-toastify';
 
 
+
 import './Home.css';
 
 import { useHistory } from 'react-router';
 import { useSelector } from 'react-redux';
-
-import ListaCategoria from '../../components/categorias/listaCategoria/ListaCategoria';
-
 import { TokenState } from '../../store/tokens/tokensReducer';
+import ListaProduto from '../../components/produtos/listaProduto/ListaProduto';
 
 
 function Home(){
-
+    /*const breakPoints= [
+        {width: 1, itemsToShow:1},
+    ] */
     let history = useHistory();
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
@@ -46,6 +47,13 @@ function Home(){
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a).</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>Conectando caminhos e orientando para o futuro.</Typography>
                     </Box>
+                   
+                   {/* <div>
+                        <Carousel breakPoints={breakPoints}>
+                        <Item><img src="" alt="" /></Item>
+                        
+                        </Carousel>
+                    </div> */}
 
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>   
@@ -57,7 +65,7 @@ function Home(){
                     <img src="https://imgur.com/5Sp2B3x.png" alt="" width="605px" height="379px" />
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>
-                    <ListaCategoria />
+                    <ListaProduto />
                 </Grid>
             </Grid>
         </>

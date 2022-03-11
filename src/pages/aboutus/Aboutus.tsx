@@ -82,6 +82,12 @@ function Aboutus() {
                             </p>
                             <br />
                             <br />
+
+                            <p>Quer saber mais sobre o projeto?</p>
+                            
+                            <Link className="clique1" to='/cisterna'>
+                            <Typography variant='subtitle1' gutterBottom align='center'>Clique aqui!</Typography>
+                        </Link>
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
@@ -89,18 +95,12 @@ function Aboutus() {
                             <Link to="/aboutus" className="text-decorator-none"> </Link>
                         </Box>
 
-                        <Box marginRight={1}>
-                            <Typography className='saibamais1' variant='subtitle1' gutterBottom align='center'> Quer saber mais sobre o projeto?</Typography>
-                        </Box>
-                        <Link className="clique" to='/cisterna'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className="saibamais1">Clique aqui!</Typography>
-                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className='about'>
 
                 </Grid>
-                <Grid xs={12} >
+                {/*<Grid xs={12} >
                     <Box className='boxnos'>
                         <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
                             <Typography variant="h5" align="center" gutterBottom className='textosnos'>Conheça os integrantes do grupo </Typography>
@@ -109,10 +109,10 @@ function Aboutus() {
 
                         </Box>
                     </Box>
-                </Grid>
+                </Grid> */}
             </Grid>
 
-            <Box className="box10" paddingX={20} display="flex">
+            {/* <Box className="box10" paddingX={20} display="flex"> 
                 <div>
                     <div className="txt-img">
                         <p>fulano</p>
@@ -135,7 +135,7 @@ function Aboutus() {
                         />
                     </div>
                 </div>
-            </Box>
+            </Box>*/}
         </>
     )
 }
