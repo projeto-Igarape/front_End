@@ -5,20 +5,31 @@ import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function Contacts() {
 
     let history = useHistory();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
     );
-  
-    function Mensagem() {
-        if (token !== "") {
-            alert("Mensagem enviada com sucesso!")
-        }
+
+    useEffect(() => {
+        if (token === '') {
+            toast.error('Mensagem enviada!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined,
+            });
             history.push("/home")
         }
+    }, [token])
+
 
     return (
         <>
@@ -61,7 +72,7 @@ function Contacts() {
                                 </div>
                                 <Box marginTop={2}>
 
-                                    <Button onSubmit={Mensagem} type='submit' variant='contained' className='button2'>
+                                    <Button type='submit' variant='contained' className='button2'>
                                        Enviar
                                     </Button>
 
