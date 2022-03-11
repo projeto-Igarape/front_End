@@ -26,7 +26,7 @@ function Contacts() {
                                 <i className="fas fa-phone-alt"></i>
                                 <div className="topic">Telefone</div>
                                 <div className="text-one">+55 11 94517 7343</div>
-                                <div className="text-two">+55 11 99136 9790</div>
+                                <div className="text-two">+55 13 99136 9790</div>
                             </div>
                             <div className="email details">
                                 <i className="fas fa-envelope"></i>
