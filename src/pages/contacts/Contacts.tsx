@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Button } from '@material-ui/core';
-import { toast } from 'react-toastify';
 import './Contacts.css';
+import { useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
 import { Link } from 'react-router-dom';
 
 function Contacts() {
 
+    let history = useHistory();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+  
     function Mensagem() {
-        alert('Mensagem enviada com sucesso!')
-    }
+        if (token !== "") {
+            alert("Mensagem enviada com sucesso!")
+        }
+            history.push("/home")
+        }
 
     return (
         <>
@@ -51,11 +61,11 @@ function Contacts() {
                                 </div>
                                 <Box marginTop={2}>
 
-                                <Button onClick={Mensagem} type='submit' variant='contained'  className='button2'>
-                                            Enviar
-                                </Button>
+                                    <Button onSubmit={Mensagem} type='submit' variant='contained' className='button2'>
+                                       Enviar
+                                    </Button>
 
-                                                                       
+
                                 </Box>
                             </form>
                         </div>
@@ -66,5 +76,6 @@ function Contacts() {
         </>
     )
 }
+
 
 export default Contacts;
