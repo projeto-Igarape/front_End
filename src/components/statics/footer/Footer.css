@@ -5,10 +5,9 @@
 }
 
 .img-logo{
-    height: 100px;
-    margin-right: 0px;
-    position: right
-;
+    max-height: 170px;
+    padding-right: 80px;
+    display:flex;
 }
 
 .img-logo:hover{
@@ -20,12 +19,7 @@
     color: white !important;
     font-size: 30 !important;
     text-decoration: none !important;
-}
-.cont{
-    max: width 1170px;
-    background-color: #4AAAE1 !important;
-    margin:auto;
-
+    
 }
 
 ul{
@@ -41,12 +35,12 @@ ul{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    
     
 }
 
 .footer{
-    background-color:#2191D199 !important ;
+    background-color:#2191D1 !important ;
     padding: 10px 0;
     width: 100%;
    
@@ -147,14 +141,13 @@ ul{
 
 .font{
     color: white !important;
-    font-size: 30 !important;
     text-decoration: none !important;
 }
-/*
 
-.box1{
-    height: 80px;
-    background-color: #4AAAE1 !important;
+.rodape{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
-
-*/

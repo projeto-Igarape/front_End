@@ -22,18 +22,18 @@ function Footer() {
         footerComponent = <footer className='footer'>
 
 
-            <Box display="flex" alignItems="left" justifyContent="left">
-                <a href="http://localhost:3000/home">
-                    <img src="https://imgur.com/KdBVSES.png.png" alt="Projeto Igarapé Logo" className="img-logo" />
-                </a>
-                <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center" className='font'>
-                    <Typography variant="h5" align="center" gutterBottom>Projeto Igarapé </Typography>
+            <Box >
+                <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
+                    <Typography variant="h5" align="center" gutterBottom ></Typography>
                 </Box>
             </Box>
 
 
             <div className='container_footer'>
-
+            <a href="http://localhost:3000/home">
+                    <img src="https://imgur.com/IRDrtBS.png" alt="Projeto Igarapé Logo" className="img-logo" />
+                </a>
+                
                 <div className='footer-col'>
                     <h4>O que somos?</h4>
                     <ul>
@@ -68,22 +68,20 @@ function Footer() {
             </div>
 
             <Box className='box1'>
-                <Box paddingTop={3} className='font'>
-                    <Typography variant="subtitle2" align="center" gutterBottom>© 2022 Copyright</Typography>
+                <Box paddingTop={3}>
                 </Box>
-
-                <Box paddingTop={0} className='font'>
-                    <Typography variant="subtitle2" align="center" gutterBottom> Projeto Igarapé Brasil LTDA. Todos os direitos reservados.
-                        São Paulo - SP</Typography>
-                </Box>
-                <Box className='font'>
-                    <a href="https://brazil.generation.org/">
-                        <Typography variant="subtitle2" gutterBottom align="center">brasil.generation.org</Typography>
-                    </a>
-                </Box>
+                <div className='rodape'>
+                    <p>Copyright © 2022 Projeto Igarapé | Todos os direitos reservados</p>
+                    <Box>
+                        <a href="https://brazil.generation.org/">
+                            <Typography variant="subtitle2" className='font'>brasil.generation.org</Typography>
+                        </a>
+                    </Box>
+                </div>
             </Box>
+        
 
-        </footer>
+        </footer >
     }
     return (
         <>
