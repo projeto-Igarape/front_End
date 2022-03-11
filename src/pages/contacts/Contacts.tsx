@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Button } from '@material-ui/core';
 import { toast } from 'react-toastify';
 import './Contacts.css';
+import { Link } from 'react-router-dom';
 
 function Contacts() {
 
@@ -49,10 +50,12 @@ function Contacts() {
                                     <textarea id="assunto" placeholder="Digite sua mensagem"></textarea>
                                 </div>
                                 <Box marginTop={2}>
-                                        <Button onClick={Mensagem} type='submit' variant='contained'  className='button2'>
+
+                                <Button onClick={Mensagem} type='submit' variant='contained'  className='button2'>
                                             Enviar
-                                        </Button>
-                                    
+                                </Button>
+
+                                                                       
                                 </Box>
                             </form>
                         </div>

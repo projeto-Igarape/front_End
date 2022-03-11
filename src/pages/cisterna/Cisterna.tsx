@@ -51,11 +51,19 @@ function Cisterna() {
                             </p>
                             <br/>
                             <p>
-                            Para tratar a água da chuva, utilize um filtro a vela. Insira a quantidade de água desejada e espere o filtro fazer seu trabalho. Em seguida, retire a água do filtro e ferva-a em uma panela por pelo menos cinco minutos. 
+                            E para tratar a água da chuva, utilize um filtro a vela. Insira a quantidade de água desejada e espere o filtro fazer seu trabalho. Em seguida, retire a água do filtro e ferva-a em uma panela por pelo menos cinco minutos. 
                             Normalmente, depois desse processo, a água estará pronta para o consumo, mas se você sente mais segurança utilizando cloro, pode adicionar 16 gotas de cloro sem cheiro a cada 20 litros de água.
  
                             </p>
+                            <br/>
+                            <br/>
+
+                            <p>Para conhecer mais sobre as sisternas modulares:</p>
                             
+                            <a target='_blank' href='https://www.ecycle.com.br/comprar-cisterna/' rel="noreferrer">
+                            <p className='clique'>clique aqui!</p>
+                            </a>
+   
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
@@ -63,19 +71,18 @@ function Cisterna() {
                         <Link to="/aboutus" className="text-decorator-none"> </Link>                    
                     </Box>       
 
-                    <Box marginRight={1}>
-                            <Typography className='saibamais' variant='subtitle1' gutterBottom align='center'>Para conhecer mais sobre as sisternas modulares:</Typography>
-                        </Box>
-                        <a target='_blank' href='https://www.ecycle.com.br/comprar-cisterna/'>
-                        <Typography variant='subtitle1' gutterBottom align='center' className="clique">clique aqui!</Typography>
-                        </a>
                     </Box>
                 </Grid>
-                <Grid item xs={6} className='about'>
+
+                <Grid item xs={6}>
+                
+                </Grid>
                     
+                <Grid xs={12} className='video'>
+                <iframe width="1100" height="550" src="https://www.youtube.com/embed/SXURltcw-CE" title="YouTube video player" 
+                frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </Grid>
-                <Grid xs={12} >
-                </Grid>
+
             </Grid>
         </>
     )

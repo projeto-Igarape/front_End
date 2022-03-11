@@ -35,7 +35,7 @@ function Navbar() {
 
     var navbarComponent;
 
-    if (token != "") {
+    if (token !== "") {
         navbarComponent = <header id="header">
             <Toolbar>
                 <img src="https://imgur.com/KdBVSES.png.png" alt="Projeto Igarapé Logo" className="imagem-logo" />
