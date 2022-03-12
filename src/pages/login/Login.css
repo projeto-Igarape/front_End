@@ -5,8 +5,13 @@
 }
 
 body{
-    background-image: url(https://imgur.com/KMWUwj1.jpg);
-    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#container_login {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://imgur.com/KMWUwj1.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -21,7 +26,6 @@ body{
 .card_login{
     background-color: #ffffff99;
     padding: 40px;
-    border-radius: 6%;
     box-shadow: 3px 3px 1px 0px #00000060;
     position: absolute;
     width: 490px;

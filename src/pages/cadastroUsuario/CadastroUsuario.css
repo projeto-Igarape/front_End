@@ -4,6 +4,18 @@
     font-family: 'Roboto';
 }
 
+body{
+    margin: 0;
+}
+
+#container_cadastro {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://imgur.com/IwBfW3p.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .container_cadastro {
     display: flex;
     justify-content: center;
@@ -17,7 +29,6 @@
 .card_cadastro{
     background-color: #ffffff99;
     padding: 50px;
-    border-radius: 6%;
     box-shadow: 3px 3px 1px 0px #00000060;
     position: absolute;
     width: 490px;
