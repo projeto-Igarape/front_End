@@ -69,7 +69,7 @@ function CadastroUsuario() {
     }
 
     return (
-        <Grid container direction='row'>
+        <Grid container direction='row' id='container_cadastro'>
             <Grid className='container_cadastro'>
                 <Box className='card_cadastro'>
                     <form onSubmit={onSubmit}>
