@@ -10,6 +10,7 @@ import { useHistory } from 'react-router';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import ListaProduto from '../../components/produtos/listaProduto/ListaProduto';
+import TabProduto from '../../components/produtos/tabProduto/TabProduto';
 
 
 function Home(){
@@ -65,7 +66,7 @@ function Home(){
                     <img src="https://imgur.com/5Sp2B3x.png" alt="" width="605px" height="379px" />
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>
-                    <ListaProduto />
+                    <TabProduto />
                 </Grid>
             </Grid>
         </>

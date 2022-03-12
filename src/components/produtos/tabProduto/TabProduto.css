@@ -1,0 +1,29 @@
+
+
+.box_tP{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #2191D1;
+    
+}
+
+.ti_text{
+    color: white !important;
+    font-weight: bold !important;
+    margin-top: 2px !important;
+    font-size: 15px !important;
+ }
+
+ .ti_text2{
+    color: white !important;
+    font-weight: bold !important;
+    text-align:center !important;
+ }
+
+ .ti_text3{
+    color: rgb(7, 6, 6) !important;
+    text-align: justify !important;
+ }
