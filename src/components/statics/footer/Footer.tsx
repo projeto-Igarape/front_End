@@ -31,16 +31,16 @@ function Footer() {
 
 
             <div className='container_footer'>
-                <Link to="http://localhost:3000/home"></Link>
+                <Link to="/home">
                 <img src="https://imgur.com/IRDrtBS.png" alt="Projeto Igarapé Logo" className="img-logo" />
+                </Link>
 
                 <div className='footer-col'>
                     <h4>O que somos?</h4>
                     <ul>
-                        <Link to='/listaProduto'>Produtos</Link>
-                        <Link to='/aboutus'>Sobre Nós</Link>
-                        <Link to='/parceiros'>Parceiros</Link>
-                        <Link to='/cisterna'>Cisterna</Link>
+                       <li><Link to='/listaProduto'>Produtos</Link></li>
+                       <li> <Link to='/aboutus'>Sobre Nós</Link></li>
+                       <li><Link to='/parceiros'>Parceiros</Link></li>                       
                     </ul>
                 </div>
 
@@ -48,21 +48,44 @@ function Footer() {
                 <div className='footer-col'>
                     <h4>Fale conosco</h4>
                     <ul>
-                        <Link to='/contacts'>Contato</Link>
-                        <Link to='/contacts'>Seja um parceiro</Link>
-                        <Link to='/contacts'>Trabalhe Conosco</Link>
-                        <Link to='/teste'>Termos & Condições</Link>
+                        <li><Link to='/contacts'>Contato</Link></li>
+                        <li><Link to='/contacts'>Seja um parceiro</Link></li>
+                        <li><Link to='/contacts'>Trabalhe Conosco</Link></li>                     
                     </ul>
                 </div>
 
                 <div className='footer-col'>
                     <h4>Nossas redes</h4>
                     <div className='social-links'>
-                        <Link to='https://www.facebook.com/thatipiress/'><FacebookIcon /></Link>
-                        <Link to="https://instagram.com/thatipiresss"><InstagramIcon /></Link>
-                        <Link to="https://youtube.com"><YoutubeIcon /></Link>
-                        <Link to="https://www.linkedin.com/in/thatipiresss/"><LinkedInIcon /></Link>
-                        <Link to="https://github.com/thatipiresss"><GitHubIcon /></Link>
+
+                                   
+                        <a href= 'https://i.imgur.com/RgiQsMD.png'><FacebookIcon /></a>
+                        <a href="https://i.imgur.com/YcVYeT6.png"><InstagramIcon /></a>
+                        <a href="https://i.imgur.com/dMlvFNb.png"><LinkedInIcon /></a>
+                        <a href="https://github.com/projeto-Igarape"><GitHubIcon /></a>
+                    </div>
+                </div>
+
+                <div className='footer-col'>
+                    <h4>Nossos Parceiros</h4>
+                    <div>
+                        <ul>
+                        <li><a href='https://gotadagua.vercel.app/'>Gota d'água</a></li>
+                        <li><a href='https://brazil.generation.org/'>Generation</a></li>
+                        <li><a href='https://sumup.com.br/'>SumUp</a></li>
+                        </ul>
+                    </div>
+                    <div className='container_parceiros'>
+                    <a href="">
+                        <img className='img_parceiros' src="https://i.imgur.com/4xYWiBN.jpg" alt="Gota d'agua"/> 
+                    </a>
+                    <a href="https://brazil.generation.org/">
+                        <img className='img_parceiros' src="https://i.imgur.com/LKBuYs7.png" alt="Generation"/> 
+                    </a>
+                    <a href="https://sumup.com.br/">
+                         <img className='img_parceiros' src="https://i.imgur.com/Hu9EdS9.png" alt="SumUp"/> 
+                    </a>
+        
                     </div>
                 </div>
             </div>
