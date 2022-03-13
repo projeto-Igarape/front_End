@@ -16,7 +16,6 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import Cisterna from './pages/cisterna/Cisterna';
 import Aboutus from './pages/aboutus/Aboutus';
 import Contacts from './pages/contacts/Contacts';
 
@@ -75,10 +74,6 @@ function App() {
 
             <Route exact path='/deletarProduto/:id'>
               <DeletarProduto />
-            </Route>
-
-            <Route exact path='/cisterna'>
-              <Cisterna />
             </Route>
 
             <Route exact path='/aboutus'>
