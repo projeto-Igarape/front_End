@@ -12,7 +12,7 @@ function Parceiros() {
     return(
         <>
        
-       <Grid container direction="row" justifyContent="center" alignItems="center">
+       <Grid container direction="row" justifyContent="center" alignItems="center" className='imgfundo'>
 
      
                 <Grid alignItems="center" item xs={6}>
@@ -22,7 +22,8 @@ function Parceiros() {
                 </Grid>
 		
                 <Grid alignItems="center" item xs={6}>
-                    <h1 className='txth1'>Gota D'agua </h1>
+                    <h1 className='txth1'>Gota D'água </h1>
+                    <br/>
                     <p className='txth4'>É uma rede social que assim como nós, prioriza o cuidado da água e tem como foco divulgar dicas 
                     para que todos cuidem de sua saúde e ajudar pessoas em vulnerabilidade, sem acesso à água potável.</p>
                     <br/>
@@ -35,6 +36,7 @@ function Parceiros() {
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <h1 className='txth1'>Generation </h1>
+                    <br/>
                     <p className='txth4'>É uma ONG focada em transformar sistemas de educação para o emprego de maneira a preparar, 
                     colocar e apoiar pessoas em carreiras transformadoras que, de outra forma, seriam inacessíveis.</p>
                     <br/>
@@ -48,7 +50,8 @@ function Parceiros() {
                 </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <h1 className='txth1'> SumUp </h1>
-                    <p className='txth4'>SumUp tem como missão ajudar o pequeno negócio a crescer oferecendo a ele soluções rápidas,
+                    <br/>
+                    <p className='txth4'>Tem como missão ajudar o pequeno negócio a crescer oferecendo a ele soluções rápidas,
                      intuitivas e acessíveis para aceitar cartão. Além disso, apoia e incentiva instituições de ensino, que preparam e 
                      capacitam pessoas para o mercado de trabalho.</p>
                      <br/>
