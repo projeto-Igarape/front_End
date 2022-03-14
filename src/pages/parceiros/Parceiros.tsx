@@ -15,13 +15,13 @@ function Parceiros() {
        <Grid container direction="row" justifyContent="center" alignItems="center" className='imgfundo'>
 
      
-                <Grid alignItems="center" item xs={6}>
+                <Grid alignItems="center" item xs={5}>
                 <a href='https://gotadagua.vercel.app/' target ='_blank' className='parcimg'>
                     <img src='https://i.imgur.com/w9mxlYI.jpg' alt="" />
                     </a>
                 </Grid>
 		
-                <Grid alignItems="center" item xs={6}>
+                <Grid alignItems="center" item xs={7}>
                     <h1 className='txth1'>Gota D'água </h1>
                     <br/>
                     <p className='txth4'>É uma rede social que assim como nós, prioriza o cuidado da água e tem como foco divulgar dicas 
@@ -29,12 +29,12 @@ function Parceiros() {
                     <br/>
                 <p className='vermais'>Clique na imagem ao lado para saber mais.</p>
                 </Grid>
-                <Grid alignItems="center" item xs={6}>
+                <Grid alignItems="center" item xs={5}>
                 <a href='https://brazil.generation.org/' target ='_blank' className='parcimg'>
                      <img src="https://i.imgur.com/jv5rS7R.jpg" alt="" />
                      </a>
                 </Grid>
-                <Grid alignItems="center" item xs={6}>
+                <Grid alignItems="center" item xs={7}>
                     <h1 className='txth1'>Generation </h1>
                     <br/>
                     <p className='txth4'>É uma ONG focada em transformar sistemas de educação para o emprego de maneira a preparar, 
@@ -43,12 +43,12 @@ function Parceiros() {
                     <p className='vermais'>Clique na imagem ao lado para saber mais.</p>
                 </Grid>
 
-                <Grid alignItems="center" item xs={6}>
+                <Grid alignItems="center" item xs={5}>
                 <a href='https://sumup.com.br/' target ='_blank' className='parcimg'>
                     <img src="https://i.imgur.com/kvl2cEo.jpg" alt="" />
                     </a>
                 </Grid>
-                <Grid alignItems="center" item xs={6}>
+                <Grid alignItems="center" item xs={7}>
                     <h1 className='txth1'> SumUp </h1>
                     <br/>
                     <p className='txth4'>Tem como missão ajudar o pequeno negócio a crescer oferecendo a ele soluções rápidas,
