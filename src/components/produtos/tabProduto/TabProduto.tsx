@@ -29,14 +29,14 @@ function TabProduto() {
           <Typography variant="body1" gutterBottom className="ti_text3">
           <div className="flex-container">
             <div><h1>Missão</h1>
-              <p>Promover a qualidade de vida de  <br /> comunidades carentes por meio  <br /> de água potável. E estimular o <br /> uso de produtos sustentáveis.</p></div>
+              <p>Promover a qualidade de vida em  <br /> comunidades carentes, criando meios <br /> de acesso à água potável. É capitalizar<br /> recursos para tal,  mediante um consumo<br /> sustentável.</p></div>
             <div><h1>Visão</h1>
-              <p>Atrair para o Projeto Igarapé pessoas <br /> e empreendimentos que se alinhem ao <br />propósito,  aumentando a capacidade <br />de comunidades a serem assistidas <br />pelo programa.</p></div>
+              <p >Atrair para o Projeto Igarapé pessoas <br /> e empreendimentos que se alinhem ao <br />propósito,  aumentando a capacidade <br />de comunidades a serem assistidas <br />pelo programa.</p></div>
             <div><h1>Valores</h1>
-              <p><li>Agir com Transparência <br /></li>
-              <li>Pensar e atuar de forma sustentável <br /></li>
-              <li>Integridade <br /></li>
-              <li>Responsabilidade com as pessoas <br /></li>
+              <p><li>Agir com Transparência; <br /></li>
+              <li>Pensar e atuar de forma sustentável; <br /></li>
+              <li>Integridade; <br /></li>
+              <li>Responsabilidade com as pessoas; <br /></li>
               </p></div>
                 </div>
           </Typography>
