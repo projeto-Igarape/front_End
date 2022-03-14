@@ -56,7 +56,7 @@ function Home(){
                     </div> */}
 
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>   
+                        <Box marginRight={2}>   
                              </Box>
                     </Box>
                 </Grid>

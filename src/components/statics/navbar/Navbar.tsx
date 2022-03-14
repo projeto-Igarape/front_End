@@ -80,7 +80,6 @@ function Navbar() {
                         </Box>
                     </Link>
                     <Avatar className='just'>PI</Avatar>
-
                     <img src="https://imgur.com/4lQ7zoc.png" alt="Carrinho" className="icons" />
                 </ul>
             </nav>

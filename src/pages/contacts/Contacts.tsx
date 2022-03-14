@@ -33,7 +33,7 @@ function Contacts() {
 
     return (
         <>
-            <body>
+            <body id='container_contacts'>
                 <div className="container_us">
                     <div className="content">
                         <div className="left-side">
