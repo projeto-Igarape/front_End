@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react';
-import {Typography, Box, Grid, Button} from '@material-ui/core';
+import { Box, Grid} from '@material-ui/core';
 import {toast} from 'react-toastify';
-
-
-
 import './Home.css';
-
 import { useHistory } from 'react-router';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
-import ListaProduto from '../../components/produtos/listaProduto/ListaProduto';
 import TabProduto from '../../components/produtos/tabProduto/TabProduto';
 
 

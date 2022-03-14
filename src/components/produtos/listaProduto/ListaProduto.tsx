@@ -8,6 +8,7 @@ import Produto from '../../../models/Produto';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import Carousel from '../../carousel/Carousel';
 
 
 function ListaProduto() {
@@ -51,10 +52,11 @@ function ListaProduto() {
   return (
     <>
       {
+        
         produtos.map(produto => (
-          <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
+          <Box m={2}>
+            <Card variant="outlined" >
+              <CardContent >
                 <Typography color="textSecondary" gutterBottom>
                   Produto
                 </Typography>
@@ -64,10 +66,10 @@ function ListaProduto() {
                 <Typography variant="h5" component="h2" align="center">
                   <img src={produto.foto} alt="" />
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography component="h2" >
                   {produto.preco}
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography  component="h2">
                   {produto.categoria?.descricao}
                 </Typography>
                 <Button className="button4" variant="contained" color="secondary" >
@@ -94,10 +96,12 @@ function ListaProduto() {
                 </Box>
               </CardActions>
             </Card>
-          </Box>
+            </Box>
         ))
+        
       }
     </>
+    
   );
 }
 
