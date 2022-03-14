@@ -5,14 +5,20 @@ import { Link, useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
-
-
+import Carousel from '../../components/carousel/Carousel';
+ 
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { CardActionArea } from '@mui/material';
+ 
+ 
 function Aboutus() {
     let history = useHistory();
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
     );
-
+ 
     useEffect(() => {
         if (token === '') {
             toast.error('Você precisa estar logado', {
@@ -28,116 +34,173 @@ function Aboutus() {
             history.push("/aboutus")
         }
     }, [token])
-
-
+ 
+ 
     return (
-        <>
+        <>            
             <Grid container direction="row" justifyContent="center" alignItems="center" className='backabout1'>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography className='titulosobre1' variant="h3" gutterBottom color="textPrimary" component="h3" align="center" >Sobre nós</Typography>
+                <Carousel/>
+                <Grid alignItems="center" item xs={12}>
+                    <Box paddingX={60} >
+                       
                         <Typography className='titulosobre' variant="h5" gutterBottom color="textPrimary" component="h5" align="center" >
-
-                            <p>
+ 
+                          <p className='conheca' >
+                                QUEM SOMOS
+                           
+                            </p>
+                            <br />
+                            <p className='txtprojeto'>
                                 O Projeto Igarapé nasceu na Generation Brasil onde, com base nos Objetivos de
                                 Desenvolvimento Sustentável sobre Água Potável e Saneamento, temos como principal
                                 intuito melhorar a disponibilização de água potável para consumo e saneamento básico
-                                em comunidades de baixa renda, além de conectar para orientar sobre a gestão
-                                sustentável da água potável e do saneamento para todos. Acreditamos que a escassez de
-                                água potável e a falta de saneamento básico, traz riscos iminentes à saúde, uma vez que é
-                                um recurso natural indispensável e essencial para a vida.
+                                em comunidades de baixa renda.
                             </p>
                             <br />
-                            <p>
-                                Muitas comunidades de baixa renda não têm acesso ao mínimo do saneamento básico e/ou água potável
-                                e própria para consumo (cerca de 35 milhões de brasileiros).
-                                Pessoas ficam mais doentes do que o normal por não terem acesso
-                                a um recurso natural indispensável e essencial.
+                            <p className='txtprojeto'>
+                                Acreditamos que a escassez de água potável e a falta de saneamento básico, traz riscos iminentes à saúde,
+                                uma vez que é um recurso natural indispensável e essencial para a vida. Com o projeto, realizaremos vendas
+                                de produtos sustentáveis e 100% dos valores serão revertidos em cisternas para captação de águas pluviais.
                             </p>
-                            <br />
-                            <p>
-                                Na pandemia, a situação se agravou, já que, de acordo com a Organização Mundial da Saúde (OMS),
-                                a lavagem completa das mãos está entre as medidas mais eficazes
-                                para limitar a propagação da Covid-19.
-                                <p>
-                                    <br />
-                                </p>
-                                Contamos com essa iniciativa para arrecadar valores que serão revertidos na compra de
-                                cisternas, possibilitando a coleta e tratamento da água da chuva e reutilização de água
-                                armazenada nas mesmas.
-                                <p>
-                                    <br />
-                                </p>
-                                Inicialmente implantaremos esse sistema de captação de água, na comunidade da Tribo,
-                                localizada no bairro Jardim Damasceno, Zona Norte de São Paulo. A favela fica em uma
-                                pequena parte ocupada de uma área de 461 mil m² de terreno acidentado e íngreme às
-                                margens da serra da Cantareira. Vivem ali cerca de mil famílias.
-                            </p>
-                            <br />
-                            <p>
-                                As famílias beneficiadas são capacitadas pelo próprio Projeto, através de um cadastro,
-                                onde a partir do mesmo conseguimos contatá-las. Assim o processo de implementação das
-                                tecnologias é realizado em regime de cooperação, gerando sentimento de pertencimento,
-                                o que promove maior sustentabilidade ao equipamento instalado.
-                            </p>
-                            <br />
-                            <br />
-
-                            <p>Quer saber mais sobre o projeto?</p>
-                            
-                            <Link className="clique1" to='/cisterna'>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Clique aqui!</Typography>
-                        </Link>
+                               
+                               
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             <Link to="/aboutus" className="text-decorator-none"> </Link>
                         </Box>
-
+ 
                     </Box>
                 </Grid>
-                <Grid item xs={6} className='about'>
-
+ 
+                <Grid alignItems='center' item xs={6} className='cist'>
+                   
+                    <p className='teste'>NOSSO OBJETIVO</p>
+                    <br />
+                    <p className='teste2'>
+                    Com a venda de produtos sustentáveis, contribuímos com a desaceleração da poluição
+                    já que os mesmos apresentam melhor desempenho ambiental ao longo de seu ciclo de vida.
+                    Além disso, todos os valores serão revertido para a Ong Habitat Brasil que
+                    desenvolve e implementa soluções de acesso à água, saneamento e higienização.
+                    </p>
+ 
                 </Grid>
-                {/*<Grid xs={12} >
-                    <Box className='boxnos'>
-                        <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom className='textosnos'>Conheça os integrantes do grupo </Typography>
-                        </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-
-                        </Box>
-                    </Box>
-                </Grid> */}
+ 
+               
+               
+                <Grid xs={12} alignItems='center' justifyContent='center' className='devs'>
+                    <h2 > Integrantes da equipe desenvolvedora:</h2>
+                </Grid>
+ 
+                <Grid container direction="row" alignItems='center' justifyContent='center' xs={12}>
+                <Card className='cardAbout' sx={{ maxWidth: 200 }}>
+                    <CardActionArea href='https://www.linkedin.com/in/paivasbr/'  target='_blank'>
+                        <CardMedia className="imageCard"
+                            component="img"
+                            height="200"
+                            image="https://i.imgur.com/csVOPIn.jpg"
+                            alt="brenda"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                Brenda Paiva
+                            </Typography>
+                           
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+ 
+                <Card className='cardAbout' sx={{ maxWidth: 200 }}>
+                    <CardActionArea href='https://www.linkedin.com/in/karol-soares/' target='_blank'>
+                        <CardMedia className="imageCard"
+                            component="img"
+                            height="200"
+                            image="https://i.imgur.com/qHtOMXa.jpg"
+                            alt="karol"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                Karol Soares
+                            </Typography>
+                            
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+ 
+                <Card className='cardAbout' sx={{ maxWidth: 200 }}>
+                    <CardActionArea href='https://www.linkedin.com/in/larissacpavan/'  target='_blank' >
+                        <CardMedia className="imageCard"
+                            component="img"
+                            height="200"
+                            image="https://i.imgur.com/VHVu6KV.jpg"
+                            alt="lari"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                Larissa Pavan
+                            </Typography>
+                            
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+ 
+                <Card className='cardAbout' sx={{ maxWidth: 200 }}>
+                    <CardActionArea href='https://www.linkedin.com/in/rafael-ferreira-7b6600205/'  target='_blank'>
+                        <CardMedia className="imageCard"
+                            component="img"
+                            height="200"
+                            image="https://i.imgur.com/Im3f904.jpg"
+                            alt="rafa"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                Rafael Ferreira
+                            </Typography>
+                            
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+ 
+                <Card className='cardAbout' sx={{ maxWidth: 200 }}>
+                    <CardActionArea href='https://www.linkedin.com/in/ferreirasc09/'  target='_blank'>
+                        <CardMedia className="imageCard"
+                            component="img"
+                            height="200"
+                            image="https://i.imgur.com/U9vLhHn.jpg"
+                            alt="ste"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                            Sté Ferreira
+                            </Typography>
+                            
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+ 
+                <Card className='cardAbout' sx={{ maxWidth: 200 }}>
+                    <CardActionArea href='https://www.linkedin.com/in/thatipiresss/'  target='_blank'>
+                        <CardMedia className="imageCard"
+                            component="img"
+                            height="200"
+                            image="https://i.imgur.com/BfFr2o8.jpg"
+                            alt="thati"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                            Thati Camargo
+                            </Typography>
+                            
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+ 
             </Grid>
-
-            {/* <Box className="box10" paddingX={20} display="flex"> 
-                <div>
-                    <div className="txt-img">
-                        <p>fulano</p>
-                        <br />
-                        <br />
-                        <p>siclano</p>
-                        <br />
-                        <br />
-                        <p>beltrano</p>
-                    </div>
-                    <div className="txt-img2">
-                        <img src="https://www.cursou.com.br/wp-content/uploads/2019/10/Curso-de-React-JS.png" alt=""
-
-                        />
-                        <img src="https://www.cursou.com.br/wp-content/uploads/2019/10/Curso-de-React-JS.png" alt=""
-
-                        />
-                        <img src="https://www.cursou.com.br/wp-content/uploads/2019/10/Curso-de-React-JS.png" alt=""
-
-                        />
-                    </div>
-                </div>
-            </Box>*/}
+        </Grid >
+ 
         </>
     )
 }
-
+ 
 export default Aboutus;

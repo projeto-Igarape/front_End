@@ -63,12 +63,7 @@ function Navbar() {
                             <li><a href="/">Produtos</a></li>
                         </Box>
                     </Link>
-                    <Link to='/cisterna'>
-                        <Box mx={1} >
-                            <li><a href="/">Cisterna</a></li>
-                        </Box>
-                    </Link>
-
+                    
                     <Link to='/aboutus'>
                         <Box mx={1}>
                             <li><a href="/">Sobre Nós</a></li>
