@@ -39,7 +39,6 @@ function TabProduto() {
               <li>Responsabilidade com as pessoas <br /></li>
               </p></div>
                 </div>
-
           </Typography>
         </TabPanel>
       </TabContext>
