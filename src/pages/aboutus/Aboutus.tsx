@@ -81,7 +81,7 @@ function Aboutus() {
                     <p className='teste2'>
                     Com a venda de produtos sustentáveis, contribuímos com a desaceleração da poluição
                     já que os mesmos apresentam melhor desempenho ambiental ao longo de seu ciclo de vida.
-                    Além disso, todos os valores serão revertido para a Ong Habitat Brasil que
+                    Além disso, todos os valores serão revertidos para a Ong Habitat Brasil que
                     desenvolve e implementa soluções de acesso à água, saneamento e higienização.
                     </p>
  
