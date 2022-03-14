@@ -41,7 +41,7 @@ function Aboutus() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className='backabout1'>
                 <Carousel/>
                 <Grid alignItems="center" item xs={12}>
-                    <Box paddingX={60} >
+                    <Box paddingX={20} >
                        
                         <Typography className='titulosobre' variant="h5" gutterBottom color="textPrimary" component="h5" align="center" >
  
