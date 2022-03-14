@@ -1,5 +1,9 @@
-#foto{
-    background-image:20px;
+.backg {
+    width: 100vw!important;
+    height: 100vh!important;
+    background-attachment: fixed!important;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cosamapro.com.br%2Fspray-762-fundo-branco-p-luminosa-colorgin%2Fp&psig=AOvVaw32iM82xIgLPWmfdZwDtxZy&ust=1647352100150000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNCQ3PnexfYCFQAAAAAdAAAAABAD);
+    background-size: cover!important;
 }
 
 .button3{

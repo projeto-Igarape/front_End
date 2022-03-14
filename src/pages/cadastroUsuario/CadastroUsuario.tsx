@@ -83,6 +83,7 @@ function CadastroUsuario() {
                             name="nome"
                             margin="normal"
                             fullWidth
+                            required
                         />
                         <TextField
                             value={user.email}
@@ -93,6 +94,7 @@ function CadastroUsuario() {
                             name="email"
                             margin="normal"
                             fullWidth
+                            required
                         />
                         <TextField
                             value={user.senha}
