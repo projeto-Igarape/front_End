@@ -10,13 +10,22 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+#container_contacts {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://imgur.com/GffKMSQ.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .container_us{
   width: 85%;
-  background: #ffffff99;
+  background: #ffff;
   border-radius: 6px;
   padding: 30px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 70px;
+  
 }
 .container_us .content{
   display: flex;

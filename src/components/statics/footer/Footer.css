@@ -5,6 +5,8 @@
 }
 
 .img-logo{
+    height: 170px;
+    width: 250px;
     max-height: 170px;
     padding-right: 80px;
     display:flex;
@@ -77,9 +79,9 @@ ul{
 .container_parceiros{
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 60%;
     margin-top: 10px;
-   background-color: white;
+    
 }
 
 .img_parceiros{

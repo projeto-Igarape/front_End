@@ -67,8 +67,8 @@ function Login() {
                 <Box className="card_login">
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom component='h3' className='text1'>Entrar</Typography>
-                        <TextField value={userLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                        <TextField value={userLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' fullWidth required placeholder='Digite seu e-mail'/>
+                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth required placeholder='Digite sua senha com no mínimo 8 caractéres' />
                         <Box marginTop={2} textAlign='center'>
 
                             <Button type='submit' variant='contained' color='primary' className='button2' >

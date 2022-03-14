@@ -6,16 +6,16 @@ import ListaProduto from '../listaProduto/ListaProduto';
 
 
 function TabProduto() {
-    const [value, setValue] = useState('1')
-    function handleChange(event: React.ChangeEvent<{}>, newValue: string){
-        setValue(newValue);
-    }
+  const [value, setValue] = useState('1')
+  function handleChange(event: React.ChangeEvent<{}>, newValue: string) {
+    setValue(newValue);
+  }
   return (
     <>
       <TabContext value={value}>
         <AppBar position="relative">
           <Tabs centered onChange={handleChange} className="box_tP">
-            <Tab className="ti_text" label="Nossos Produtos" value="1"/>
+            <Tab className="ti_text" label="Nossos Produtos" value="1" />
             <Tab className="ti_text" label="Nossa Cultura" value="2" />
           </Tabs>
         </AppBar>
@@ -26,7 +26,20 @@ function TabProduto() {
         </TabPanel>
         <TabPanel value="2">
           <Typography variant="h5" gutterBottom component="h5" className="ti_text2" >Sobre-nós</Typography>
-          <Typography variant="body1" gutterBottom className="ti_text3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ut eveniet natus totam et, voluptate dicta tempore alias, odio nobis non eius cupiditate minima inventore pariatur! Ipsum itaque consectetur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit consequuntur suscipit fugiat, nam quis quod quaerat veritatis et, vel ratione beatae, facere neque! Quo animi porro voluptate saepe deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci, officia aut quidem dolorum deserunt iure dolorem doloribus velit nobis quas consequatur at ullam odit, nesciunt est nulla nihil excepturi!</Typography>
+          <Typography variant="body1" gutterBottom className="ti_text3">
+          <div className="flex-container">
+            <div><h1>Missão</h1>
+              <p>Promover a qualidade de vida em  <br /> comunidades carentes, criando meios <br /> de acesso à água potável. É capitalizar<br /> recursos para tal,  mediante um consumo<br /> sustentável.</p></div>
+            <div><h1>Visão</h1>
+              <p >Atrair para o Projeto Igarapé pessoas <br /> e empreendimentos que se alinhem ao <br />propósito,  aumentando a capacidade <br />de comunidades a serem assistidas <br />pelo programa.</p></div>
+            <div><h1>Valores</h1>
+              <p><li>Agir com Transparência; <br /></li>
+              <li>Pensar e atuar de forma sustentável; <br /></li>
+              <li>Integridade; <br /></li>
+              <li>Responsabilidade com as pessoas; <br /></li>
+              </p></div>
+                </div>
+          </Typography>
         </TabPanel>
       </TabContext>
     </>

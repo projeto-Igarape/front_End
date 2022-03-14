@@ -1,0 +1,23 @@
+.parcimg{
+    padding-left: 100px;
+}
+
+.txth1{
+    position: relative;
+}
+
+.txth4{
+    font-size: 18px;
+    font-style: italic;
+    position: relative;
+        
+    }
+
+.vermais{
+    font-size: 12px;
+    
+}
+
+.imgfundo{
+    background-color: rgba(148, 197, 223, 0.583);
+}
