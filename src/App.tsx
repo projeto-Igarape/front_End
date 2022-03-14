@@ -18,6 +18,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Aboutus from './pages/aboutus/Aboutus';
 import Contacts from './pages/contacts/Contacts';
+import Parceiros from './pages/parceiros/Parceiros';
 
 function App() {
   return (
@@ -82,6 +83,10 @@ function App() {
 
             <Route exact path='/contacts'>
               <Contacts />
+            </Route>
+
+            <Route exact path='/parceiros'>
+              <Parceiros />
             </Route>
 
           </div>
