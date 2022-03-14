@@ -103,7 +103,7 @@ function CadastroUsuario() {
                             name="senha"
                             margin="normal"
                             type="password"
-                            fullWidth
+                            fullWidth required placeholder='A senha deve conter no mínimo 8 caractéres'
                         />
                         <TextField
                             value={confirmarSenha}
@@ -114,7 +114,7 @@ function CadastroUsuario() {
                             name="confirmarSenha"
                             margin="normal"
                             type="password"
-                            fullWidth
+                            fullWidth required placeholder='A senha deve conter no mínimo 8 caractéres'
                         />
                         <Box marginTop={2} textAlign='center'>
                         <Button type='submit' variant='contained' className="button-submit buttton2">

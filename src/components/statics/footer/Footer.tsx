@@ -59,10 +59,10 @@ function Footer() {
                     <div className='social-links'>
 
                                    
-                        <a href= 'https://i.imgur.com/RgiQsMD.png'><FacebookIcon /></a>
-                        <a href="https://i.imgur.com/YcVYeT6.png"><InstagramIcon /></a>
-                        <a href="https://i.imgur.com/dMlvFNb.png"><LinkedInIcon /></a>
-                        <a href="https://github.com/projeto-Igarape"><GitHubIcon /></a>
+                        <a href= 'https://i.imgur.com/RgiQsMD.png'target= "_blank"><FacebookIcon /></a>
+                        <a href="https://i.imgur.com/YcVYeT6.png" target= "_blank"><InstagramIcon /></a>
+                        <a href="https://i.imgur.com/dMlvFNb.png" target= "_blank"><LinkedInIcon /></a>
+                        <a href="https://github.com/projeto-Igarape" target= "_blank"><GitHubIcon /></a>
                     </div>
                 </div>
 
@@ -70,20 +70,20 @@ function Footer() {
                     <h4>Nossos Parceiros</h4>
                     <div>
                         <ul>
-                        <li><a href='https://gotadagua.vercel.app/'>Gota d'água</a></li>
-                        <li><a href='https://brazil.generation.org/'>Generation</a></li>
-                        <li><a href='https://sumup.com.br/'>SumUp</a></li>
+                        <li><a href='https://gotadagua.vercel.app/' target= "_blank">Gota d'água</a></li>
+                        <li><a href='https://brazil.generation.org/' target= "_blank">Generation</a></li>
+                        <li><a href='https://sumup.com.br/' target= "_blank">SumUp</a></li>
                         </ul>
                     </div>
                     <div className='container_parceiros'>
-                    <a href="">
-                        <img className='img_parceiros' src="https://i.imgur.com/4xYWiBN.jpg" alt="Gota d'agua"/> 
+                    <a href="https://gotadagua.vercel.app/" target= "_blank">
+                        <img className='img_parceiros' src="https://i.imgur.com/w9mxlYI.jpg" alt="Gota d'agua"/> 
                     </a>
-                    <a href="https://brazil.generation.org/">
-                        <img className='img_parceiros' src="https://i.imgur.com/LKBuYs7.png" alt="Generation"/> 
+                    <a href="https://brazil.generation.org/" target= "_blank">
+                        <img className='img_parceiros' src="https://i.imgur.com/Upronuc.jpg" alt="Generation"/> 
                     </a>
-                    <a href="https://sumup.com.br/">
-                         <img className='img_parceiros' src="https://i.imgur.com/Hu9EdS9.png" alt="SumUp"/> 
+                    <a href="https://sumup.com.br/" target= "_blank">
+                         <img className='img_parceiros' src="https://i.imgur.com/kvl2cEo.jpg" alt="SumUp"/> 
                     </a>
         
                     </div>
@@ -96,7 +96,7 @@ function Footer() {
                 <div className='rodape'>
                     <p>Copyright © 2022 Projeto Igarapé | Todos os direitos reservados</p>
                     <Box>
-                        <a href="https://brazil.generation.org/">
+                        <a href="https://brazil.generation.org/" target= "_blank">
                             <Typography variant="subtitle2" className='font'>brasil.generation.org</Typography>
                         </a>
                     </Box>
