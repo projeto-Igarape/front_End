@@ -1,12 +1,11 @@
 body, ul {
-    margin: 0;
-    padding: 0;
+    
 }
 
 .icons{
     max-width:55px;
     max-height:35px; 
-    padding-left: 10px;
+   
     margin: auto;
 }
 
@@ -35,7 +34,7 @@ a:hover {
 
 .imagem-logo{
     height: 65px;
-    margin: auto;
+  
 }
 
 #logo {
