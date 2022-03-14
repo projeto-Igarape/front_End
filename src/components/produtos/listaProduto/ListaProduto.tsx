@@ -58,24 +58,24 @@ function ListaProduto() {
                 <Typography color="textSecondary" gutterBottom>
                   Produto
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" align="center">
                   {produto.nome}
+                </Typography>
+                <Typography variant="h5" component="h2" align="center">
+                  <img src={produto.foto} alt="" />
                 </Typography>
                 <Typography variant="h5" component="h2">
                   {produto.preco}
                 </Typography>
                 <Typography variant="h5" component="h2">
-                  {produto.foto}
-                </Typography>
-                <Typography variant="h5" component="h2">
-                  <img src={produto.foto} alt="" />
-                </Typography>
-                <Typography variant="h5" component="h2">
                   {produto.categoria?.descricao}
                 </Typography>
+                <Button className="button4" variant="contained" color="secondary" >
+                  Comprar
+                </Button>
               </CardContent>
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5} >
+                <Box display="flex" justifyContent="center" >
 
                   <Link to={`/cadastroProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
