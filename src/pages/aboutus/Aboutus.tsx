@@ -6,19 +6,19 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import Carousel from '../../components/carousel/Carousel';
- 
+
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
- 
- 
+
+
 function Aboutus() {
     let history = useHistory();
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
     );
- 
+
     useEffect(() => {
         if (token === '') {
             toast.error('Você precisa estar logado', {
@@ -34,68 +34,44 @@ function Aboutus() {
             history.push("/aboutus")
         }
     }, [token])
- 
- 
+
+
     return (
-        <>            
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='backabout1'>
-                <Carousel/>
-                <Grid alignItems="center" item xs={12}>
-                    <Box paddingX={60} >
-                       
-                        <Typography className='titulosobre' variant="h5" gutterBottom color="textPrimary" component="h5" align="center" >
- 
-                          <p className='conheca' >
-                                QUEM SOMOS
-                           
-                            </p>
-                            <br />
-                            <p className='txtprojeto'>
-                                O Projeto Igarapé nasceu na Generation Brasil onde, com base nos Objetivos de
-                                Desenvolvimento Sustentável sobre Água Potável e Saneamento, temos como principal
-                                intuito melhorar a disponibilização de água potável para consumo e saneamento básico
-                                em comunidades de baixa renda.
-                            </p>
-                            <br />
-                            <p className='txtprojeto'>
-                                Acreditamos que a escassez de água potável e a falta de saneamento básico, traz riscos iminentes à saúde,
-                                uma vez que é um recurso natural indispensável e essencial para a vida. Com o projeto, realizaremos vendas
-                                de produtos sustentáveis e 100% dos valores serão revertidos em cisternas para captação de águas pluviais.
-                            </p>
-                               
-                               
-                        </Typography>
-                    </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <Link to="/aboutus" className="text-decorator-none"> </Link>
-                        </Box>
- 
-                    </Box>
-                </Grid>
- 
-                <Grid alignItems='center' item xs={6} className='cist'>
-                   
-                    <p className='teste'>NOSSO OBJETIVO</p>
-                    <br />
-                    <p className='teste2'>
-                    Com a venda de produtos sustentáveis, contribuímos com a desaceleração da poluição
-                    já que os mesmos apresentam melhor desempenho ambiental ao longo de seu ciclo de vida.
-                    Além disso, todos os valores serão revertidos para a Ong Habitat Brasil que
-                    desenvolve e implementa soluções de acesso à água, saneamento e higienização.
+        <>
+            <body>
+                <div className="banner">
+                    <div className="banner__overlay">
+                        <div className="banner__container">
+                            <h1 className="banner__title">Nossa História</h1>
+                            <p className="banner__text">conectando caminhos e orientando para o futuro.</p>
+                        </div>
+                    </div>
+                    <div className="story-img"></div>
+                </div>
+                </body>
+                <section className="section section-dark" >
+                    <h2>Projeto Igarapé</h2>
+
+                    <p className="description__p">
+                    O Projeto Igarapé busca por meio da alusão a cultura indígena uma relação de elemento sagrado com a água. Associando assim, toda uma cultura originária ao estimulo de um consumo consciente. Aplicando por meio de uma plataforma digital, produtos que refletem o fomento para melhores práticas na utilização de recursos hídricos pela indústria. Sendo assim, a equipe igarapé entende o valor de cada produto e empenha-se em criar caminhos para o acesso a água potável em meio a um desenvolvimento insustentável, revertendo os valores arrecadados para ONGS que atuem com aplicação de cisternas em comunidades carentes, com base nos objetivos de desenvolvimento Sustentável da ONU, que trata a ODS 6 - Água Potável e Saneamento.
                     </p>
- 
-                </Grid>
- 
-               
-               
-                <Grid xs={12} alignItems='center' justifyContent='center' className='devs'>
-                    <h2 > Integrantes da equipe desenvolvedora:</h2>
-                </Grid>
- 
-                <Grid container direction="row" alignItems='center' justifyContent='center' xs={12}>
+                </section>
+                <div className="secondimg">
+                    <div className="text">
+                    </div>
+                </div>
+                <section className="section section-dark">
+                    <h2>Objetivo</h2>
+                    <p className="description__p">
+                    Ser referência no auxílio para o acesso de água, saneamento e higienização à comunidades carentes, conectando-as a desenvolvimentos e implementações de soluções por meio de parceiros, colaboradores, entre outros. Revertendo todos os valores arrecadados, pelo e-commerce, para gerir e financiar custos de projeto. Aplicando também recursos para iniciativas da Ong Habitat Brasil.
+                    </p>
+                </section>
+                <div className="thirdimg">
+                </div>
+            
+            <Grid container direction="row" alignItems='center' justifyContent='center' xs={12}>
                 <Card className='cardAbout' sx={{ maxWidth: 200 }}>
-                    <CardActionArea href='https://www.linkedin.com/in/paivasbr/'  target='_blank'>
+                    <CardActionArea href='https://www.linkedin.com/in/paivasbr/' target='_blank'>
                         <CardMedia className="imageCard"
                             component="img"
                             height="200"
@@ -106,11 +82,11 @@ function Aboutus() {
                             <Typography gutterBottom variant="h5" component="div">
                                 Brenda Paiva
                             </Typography>
-                           
+
                         </CardContent>
                     </CardActionArea>
                 </Card>
- 
+
                 <Card className='cardAbout' sx={{ maxWidth: 200 }}>
                     <CardActionArea href='https://www.linkedin.com/in/karol-soares/' target='_blank'>
                         <CardMedia className="imageCard"
@@ -123,13 +99,13 @@ function Aboutus() {
                             <Typography gutterBottom variant="h5" component="div">
                                 Karol Soares
                             </Typography>
-                            
+
                         </CardContent>
                     </CardActionArea>
                 </Card>
- 
+
                 <Card className='cardAbout' sx={{ maxWidth: 200 }}>
-                    <CardActionArea href='https://www.linkedin.com/in/larissacpavan/'  target='_blank' >
+                    <CardActionArea href='https://www.linkedin.com/in/larissacpavan/' target='_blank' >
                         <CardMedia className="imageCard"
                             component="img"
                             height="200"
@@ -140,13 +116,13 @@ function Aboutus() {
                             <Typography gutterBottom variant="h5" component="div">
                                 Larissa Pavan
                             </Typography>
-                            
+
                         </CardContent>
                     </CardActionArea>
                 </Card>
- 
+
                 <Card className='cardAbout' sx={{ maxWidth: 200 }}>
-                    <CardActionArea href='https://www.linkedin.com/in/rafael-ferreira-7b6600205/'  target='_blank'>
+                    <CardActionArea href='https://www.linkedin.com/in/rafael-ferreira-7b6600205/' target='_blank'>
                         <CardMedia className="imageCard"
                             component="img"
                             height="200"
@@ -157,13 +133,13 @@ function Aboutus() {
                             <Typography gutterBottom variant="h5" component="div">
                                 Rafael Ferreira
                             </Typography>
-                            
+
                         </CardContent>
                     </CardActionArea>
                 </Card>
- 
+
                 <Card className='cardAbout' sx={{ maxWidth: 200 }}>
-                    <CardActionArea href='https://www.linkedin.com/in/ferreirasc09/'  target='_blank'>
+                    <CardActionArea href='https://www.linkedin.com/in/ferreirasc09/' target='_blank'>
                         <CardMedia className="imageCard"
                             component="img"
                             height="200"
@@ -172,15 +148,15 @@ function Aboutus() {
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                            Sté Ferreira
+                                Sté Ferreira
                             </Typography>
-                            
+
                         </CardContent>
                     </CardActionArea>
                 </Card>
- 
+
                 <Card className='cardAbout' sx={{ maxWidth: 200 }}>
-                    <CardActionArea href='https://www.linkedin.com/in/thatipiresss/'  target='_blank'>
+                    <CardActionArea href='https://www.linkedin.com/in/thatipiresss/' target='_blank'>
                         <CardMedia className="imageCard"
                             component="img"
                             height="200"
@@ -189,18 +165,15 @@ function Aboutus() {
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                            Thati Camargo
+                                Thati Camargo
                             </Typography>
-                            
+
                         </CardContent>
                     </CardActionArea>
                 </Card>
- 
             </Grid>
-        </Grid >
- 
         </>
     )
 }
- 
+
 export default Aboutus;

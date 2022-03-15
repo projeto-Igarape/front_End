@@ -1,6 +1,7 @@
 .flex-container {
    display: flex;
    justify-content: space-around;
+   text-align: justify;
    background: rgba(148, 197, 223, 0.583);
 
 }
@@ -14,7 +15,6 @@ h1 {
    margin: 10px;
    padding: 20px;
    font-size: 20px;
-   
 }
 
 .box_tP{
