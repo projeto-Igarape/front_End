@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
+import { Grid, Box, Typography, TextField, Button, Toolbar } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
@@ -73,7 +73,9 @@ function CadastroUsuario() {
             <Grid className='container_cadastro'>
                 <Box className='card_cadastro'>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' component='h3' className='texto_cadastro'>Cadastrar</Typography>
+                    <Toolbar>
+                            <img id='logo_cadUser' src="https://imgur.com/KdBVSES.png" alt="Projeto Igarapé Logo"/>
+                        <Typography variant='h3' component='h3' className='texto_cadastro'>Cadastrar</Typography></Toolbar>
                         <TextField
                             value={user.nome}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}

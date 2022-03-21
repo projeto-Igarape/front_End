@@ -16,6 +16,11 @@ body{
     background-attachment: fixed;
 }
 
+#logo_cadUser{
+    height: 80px;
+    margin-right: 12px; 
+}
+
 .container_cadastro {
     display: flex;
     justify-content: center;
@@ -27,7 +32,7 @@ body{
 }
 
 .card_cadastro{
-    background-color: #ffffff99;
+    background-color: #c1eff499;
     padding: 50px;
     box-shadow: 3px 3px 1px 0px #00000060;
     position: absolute;
@@ -36,9 +41,8 @@ body{
 
 .texto_cadastro{
     text-align: center;
-    margin-bottom: 20px;
     font-weight: bold !important;
-    color: #00352c !important
+    color: #003c6c99 !important
 }
 
 .botao_ajuste{
@@ -51,7 +55,7 @@ body{
 .buttton2{
     margin-right: 45px !important;
     color: white !important;
-    background-color: #00352c !important;
+    background-color: #0277bd99 !important;
     font-weight: bold !important;
 }
 
@@ -61,9 +65,9 @@ body{
 
 .button-submit {
     text-decoration: none!important;
-    background-color: #00352c!important;
+    background-color: #0277bd!important;
 }
 
 .field {
-	label: #00352c!important;
+	label: #0277bd!important;
 }

@@ -72,7 +72,7 @@ function ListaProduto() {
                 <Typography  component="h2">
                   {produto.categoria?.descricao}
                 </Typography>
-                <Button className="button4" variant="contained" color="secondary" >
+                <Button variant="contained" >
                   Comprar
                 </Button>
               </CardContent>

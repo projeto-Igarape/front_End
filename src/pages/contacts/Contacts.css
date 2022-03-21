@@ -50,7 +50,7 @@ body{
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  background: #00352c;
+  background: #0277bd;
 }
 .content .left-side .details{
   margin: 14px;
@@ -80,7 +80,7 @@ body{
   font-size: 23px;
   font-weight: 600;
   padding-block-end: 3px;
-  color: #00352c;
+  color: #0277bd;
 }
 .right-side .input-box{
   height: 50px;
@@ -116,12 +116,12 @@ body{
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #00352c;
+  background: #0277bd;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #00352c;
+  background: #0277bd;
 }
 
 @media (max-width: 950px) {

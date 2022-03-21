@@ -2,3 +2,15 @@
     padding: 5px!important;
     margin: 85px 0px!important; 
 }
+
+.button_del{
+    color: white !important;
+    background-color: #0277bd!important;
+    font-weight: bold !important; 
+}
+
+.button_delNot{
+    color: white !important;
+    background-color: #f0100099!important;
+    font-weight: bold !important; 
+}

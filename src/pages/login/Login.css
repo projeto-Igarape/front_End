@@ -16,6 +16,12 @@ body{
     background-attachment: fixed;
 }
 
+#logo_login{
+    height: 80px;
+    margin-right: 45px; 
+    
+}
+
 .container_login {
     display: flex;
     justify-content: center;
@@ -24,7 +30,7 @@ body{
 }
 
 .card_login{
-    background-color: #ffffff99;
+    background-color: #c1eff499;
     padding: 40px;
     box-shadow: 3px 3px 1px 0px #00000060;
     position: absolute;
@@ -34,19 +40,20 @@ body{
 
 .text1{
     text-align: center;
-    margin-bottom: 20px;
     font-weight: bold !important;
-    color: #00352c !important;
+    color: #003c6c99 !important;
+    padding: 25px 0px 25px;
+    
 }
 
 .text2{
-    color: #00352c;
+    color: #003c6c99;
     font-weight: bold !important;
 }
 
 .button2{
     color: white !important;
-    background-color: #00352c !important;
+    background-color: #0277bd!important;
     font-weight: bold !important; 
 }
 
