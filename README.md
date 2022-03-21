@@ -11,7 +11,7 @@ O Projeto Igarapé busca por meio da alusão a cultura indígena toda uma relaç
 Nossa equipe entende que no valor de cada produto podem-se criar caminhos no auxílio para o acesso de água potável, saneamento e higienização à comunidades carentes, conectando-as a desenvolvimentos e implementações de soluções por meio de parceiros, colaboradores, entre outros. Revertendo todos os valores arrecadados, pelo e-commerce, para gerir e financiar custos de projeto. Aplicando também recursos para iniciativas da Habitat para a Humanidade Brasil. </p>
 
 
-### Desenvolvido com as ferrantas e tecnologias:
+### Desenvolvido com as ferramentas e tecnologias:
 <p align="center"> 
 O backend do projeto foi desenvolvido com MySQL e Spring Boot. Para o frontend, utilizamos Visual Studio Code, implementando redux. </p>
 
