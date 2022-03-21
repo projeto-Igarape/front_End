@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
-
 function ModalProduto () {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);

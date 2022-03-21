@@ -107,7 +107,7 @@ function CadastroCategoria() {
     }
 
     return (
-        <Container maxWidth="xs" className='container_cadcategoria'>
+        <Container maxWidth="sm" className='container_cadcategoria'>
             <form onSubmit={onSubmit} className='card_cadcategoria' >
                 <Typography variant="h3" component="h2" align="center" className='text_cadcategoria' >Cadastre uma Categoria</Typography>
                 <TextField value={categoria.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth className='input-box2' />

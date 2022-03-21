@@ -8,26 +8,26 @@ import Produto from '../../../models/Produto';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
-import Carousel from '../../carousel/Carousel';
 
 
 function ListaProduto() {
   const [produtos, setProdutos] = useState<Produto[]>([])
-  const token = useSelector<TokenState, TokenState['tokens']>(
+  const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
-  );
-  let history = useHistory();
+  )
 
+  let history = useHistory();
+  
   useEffect(() => {
-    if (token === '') {
+    if (token === "") {
       toast.error('Você precisa estar logado', {
         position: "top-right",
-        autoClose: 5000,
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: true,
+        pauseOnHover: false,
         draggable: false,
-        theme: 'colored',
+        theme: "colored",
         progress: undefined,
       });
       history.push("/login")
@@ -54,22 +54,23 @@ function ListaProduto() {
       {
         
         produtos.map(produto => (
-          <Box className='backg' >
+          
+          <Box m={0} >
             <Card variant="outlined" >
               <CardContent >
                 <Typography color="textSecondary" gutterBottom>
                   Produto
                 </Typography>
-                <Typography variant="h5" component="h2" align="center">
+                <Typography variant="h5" component="p">
                   {produto.nome}
                 </Typography>
-                <Typography variant="h5" component="h2" align="center">
+                <Typography variant="body2" component="p">
                   <img src={produto.foto} alt="" />
                 </Typography>
-                <Typography component="h2" >
+                <Typography variant="body2" component="p" >
                   {produto.preco}
                 </Typography>
-                <Typography  component="h2">
+                <Typography variant="body2" component="p">
                   {produto.categoria?.descricao}
                 </Typography>
                 <Button variant="contained" >
@@ -77,7 +78,7 @@ function ListaProduto() {
                 </Button>
               </CardContent>
               <CardActions>
-                <Box display="flex" justifyContent="center" >
+                <Box display="flex" justifyContent="center" mb={1.5}>
 
                   <Link to={`/cadastroProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
