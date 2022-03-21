@@ -6,6 +6,7 @@ import { useHistory } from 'react-router';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import TabProduto from '../../components/produtos/tabProduto/TabProduto';
+import Carousel from '../../components/carousel/Carousel';
 
 
 function Home(){
@@ -51,6 +52,7 @@ function Home(){
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>
                     <TabProduto />
+                    <Carousel />
                 </Grid>
             </Grid>
         </>

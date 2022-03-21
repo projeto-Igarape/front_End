@@ -1,4 +1,4 @@
-import Slide1 from '../components/carousel/imagens/igarape.jpeg'
+import Slide1 from '../components/carousel/imagens/igarape.jpg'
 import Slide2 from '../components/carousel/imagens/juntos.jpg'
 import Slide3 from '../components/carousel/imagens/agua-potavel.jpg'
 
