@@ -72,21 +72,10 @@ function Footer() {
                         <ul>
                         <li><a href='https://gotadagua.vercel.app/' target= "_blank">Gota d'água</a></li>
                         <li><a href='https://brazil.generation.org/' target= "_blank">Generation</a></li>
-                        <li><a href='https://sumup.com.br/' target= "_blank">SumUp</a></li>
+                        
                         </ul>
                     </div>
-                    <div className='container_parceiros'>
-                    <a href="https://gotadagua.vercel.app/" target= "_blank">
-                        <img className='img_parceiros' src="https://i.imgur.com/w9mxlYI.jpg" alt="Gota d'agua"/> 
-                    </a>
-                    <a href="https://brazil.generation.org/" target= "_blank">
-                        <img className='img_parceiros' src="https://i.imgur.com/Upronuc.jpg" alt="Generation"/> 
-                    </a>
-                    <a href="https://sumup.com.br/" target= "_blank">
-                         <img className='img_parceiros' src="https://i.imgur.com/kvl2cEo.jpg" alt="SumUp"/> 
-                    </a>
-        
-                    </div>
+                    
                 </div>
             </div>
 

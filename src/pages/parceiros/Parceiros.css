@@ -1,5 +1,6 @@
 .parcimg{
     padding-left: 100px;
+    
 }
 
 .txth1{
@@ -20,4 +21,5 @@
 
 .imgfundo{
     background-color: rgba(148, 197, 223, 0.583);
+    height: 100vh;
 }
